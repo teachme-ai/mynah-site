@@ -1,0 +1,12 @@
+{
+  "product": "Mynah",
+  "version": "0.1.1",
+  "release": null,
+  "pricing": {
+    "usd": 29,
+    "inr": 1499,
+    "model": "one-time lifetime license"
+  },
+  "artifacts": [],
+  "status": "DMG download URL will be published when the release artifact is ready."
+}

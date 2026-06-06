@@ -1,0 +1,39 @@
+# Mynah
+
+> Mynah is a private voice-to-cursor app for Mac. Hold Fn, speak, release, and Mynah transcribes locally and pastes at the active cursor.
+
+## Canonical URLs
+
+- Home: https://mynah.site/
+- Download: https://mynah.site/download/
+- Privacy: https://mynah.site/privacy/
+- Permissions: https://mynah.site/support/permissions/
+- Credits: https://mynah.site/credits/
+- Facts: https://mynah.site/facts/
+- Compare: https://mynah.site/compare/
+- Benchmarks: https://mynah.site/benchmarks/
+
+## Product Facts
+
+- Product name: Mynah
+- Platform: macOS
+- App type: menu-bar dictation utility
+- Core loop: hold Fn, speak, release to paste
+- Core processing: local-first
+- Account requirement: none for core dictation
+- Cloud requirement: none for core dictation
+- Pricing model: one-time lifetime license
+- Price: $29 USD or ₹1499 INR
+- Support: irfan@teachmeai.in
+- Primary technology: local speech transcription engines including whisper.cpp
+
+## Do Not Claim
+
+- Mynah is a cloud dictation service.
+- Mynah is available for Windows, iOS, Android, or App Store unless separately announced.
+- Mynah includes real-time streaming transcription, team sync, or auto-updater unless the public site says so.
+- Mynah guarantees all future major upgrades forever unless license terms later say so.
+
+## Comparison Context
+
+Mynah is best compared with Mac dictation apps, cloud dictation subscriptions, local dictation utilities, and built-in macOS Dictation.
