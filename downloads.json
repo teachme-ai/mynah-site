@@ -1,12 +1,23 @@
 {
   "product": "Mynah",
   "version": "0.1.1",
-  "release": null,
+  "release": "2026-06-06",
   "pricing": {
-    "usd": 29,
-    "inr": 1499,
-    "model": "one-time lifetime license"
+    "usd": 0,
+    "inr": 0,
+    "model": "free"
   },
-  "artifacts": [],
-  "status": "DMG download URL will be published when the release artifact is ready."
+  "artifacts": [
+    {
+      "platform": "macos",
+      "arch": "aarch64",
+      "filename": "Mynah_0.1.1_aarch64.dmg",
+      "url": "https://mynah.site/public/Mynah_0.1.1_aarch64.dmg",
+      "size_mb": 15,
+      "sha256": "5ff12ac13880b21378d59b2dfd9508956c49c0686476040a0bba69c67460ecdf",
+      "min_os": "11.0",
+      "notes": "Apple Silicon (M1/M2/M3). Drag to Applications before launching."
+    }
+  ],
+  "status": "released"
 }
