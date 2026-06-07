@@ -420,9 +420,160 @@ h3 {
   margin: 3.5rem 0;
 }
 
+/* ── Decision table ───────────────────────────── */
+.decision-table-wrap {
+  overflow-x: auto;
+  margin: 2rem 0 0.5rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.decision-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  min-width: 680px;
+}
+
+.decision-table th,
+.decision-table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--line);
+  border-right: 1px solid var(--line);
+  text-align: left;
+  vertical-align: middle;
+}
+
+.decision-table th:last-child,
+.decision-table td:last-child {
+  border-right: none;
+}
+
+.decision-table tr:last-child td {
+  border-bottom: none;
+}
+
+.decision-table thead tr {
+  background: var(--surface-2);
+}
+
+.decision-table thead th {
+  font-weight: 800;
+  font-size: 0.85rem;
+  letter-spacing: 0.01em;
+}
+
+.decision-table tbody tr {
+  transition: background 120ms ease;
+}
+
+.decision-table tbody tr:hover {
+  background: rgba(23, 109, 85, 0.04);
+}
+
+.mynah-column {
+  background: linear-gradient(180deg, rgba(23, 109, 85, 0.07) 0%, rgba(23, 109, 85, 0.04) 100%);
+  color: var(--brand-dark);
+  font-weight: 700;
+  border-left: 2px solid rgba(23, 109, 85, 0.35) !important;
+  border-right: 2px solid rgba(23, 109, 85, 0.35) !important;
+}
+
+.decision-table thead .mynah-column {
+  background: linear-gradient(180deg, rgba(23, 109, 85, 0.15) 0%, rgba(23, 109, 85, 0.08) 100%);
+  color: var(--brand);
+}
+
+/* ── Comparison legend ────────────────────────── */
+.comparison-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin: 0.75rem 0 1.5rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.comparison-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* ── Competitor cards ─────────────────────────── */
+.competitor-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.competitor-card {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 1.4rem 1.5rem;
+  box-shadow: 0 8px 28px rgba(20, 42, 34, 0.07);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.competitor-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(20, 42, 34, 0.12);
+}
+
+.competitor-card--mynah {
+  border-color: rgba(23, 109, 85, 0.4);
+  background: linear-gradient(135deg, rgba(23, 109, 85, 0.06) 0%, rgba(255,255,255,0.9) 100%);
+  box-shadow: 0 8px 28px rgba(23, 109, 85, 0.12);
+}
+
+.competitor-card-label {
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--brand);
+  margin: 0 0 0.4rem;
+}
+
+.competitor-card--mynah .competitor-card-label {
+  color: var(--brand);
+}
+
+.competitor-card:not(.competitor-card--mynah) .competitor-card-label {
+  color: var(--muted);
+}
+
+.competitor-card-title {
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.75rem;
+  color: var(--ink);
+}
+
+.competitor-card ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.competitor-card li {
+  margin-bottom: 0.3rem;
+}
+
+/* ── Legacy comparison-table (keep for any remaining use) ── */
 .comparison-table {
   overflow: hidden;
   margin: 2rem 0 1rem;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
 }
 
 .comparison-table [role="row"] {
@@ -436,13 +587,8 @@ h3 {
   border-right: 1px solid var(--line);
 }
 
-.comparison-table span:last-child {
-  border-right: 0;
-}
-
-.comparison-table [role="row"]:last-child span {
-  border-bottom: 0;
-}
+.comparison-table span:last-child { border-right: 0; }
+.comparison-table [role="row"]:last-child span { border-bottom: 0; }
 
 .table-head {
   background: var(--surface-2);
