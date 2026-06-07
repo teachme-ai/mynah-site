@@ -3,23 +3,134 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mynah Permissions - Microphone and Accessibility</title>
-  <meta name="description" content="Why Mynah needs macOS Microphone and Accessibility permissions for private voice-to-cursor dictation." />
+  <title>Mynah — Permissions and Troubleshooting</title>
+  <meta name="description" content="How to install Mynah, grant Microphone and Accessibility permissions, and fix common issues on macOS." />
   <link rel="canonical" href="https://mynah.site/support/permissions/" />
   <link rel="icon" type="image/png" href="/public/favicon.png" />
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
-  <header class="site-header"><nav class="nav-shell"><a class="brand" href="/"><img src="/public/mynah_icon_highres.png" alt="" class="brand-mark" /><span>Mynah</span></a><a class="nav-cta" href="/">Home</a></nav></header>
+  <header class="site-header"><nav class="nav-shell"><a class="brand" href="/"><img src="/public/mynah_icon_highres.png" alt="" class="brand-mark" /><span>Mynah</span></a><a class="nav-cta" href="/download/">Download</a></nav></header>
   <main class="section">
+
     <p class="eyebrow">Support</p>
-    <h1>Permissions Mynah needs.</h1>
-    <div class="feature-grid">
-      <article><h3>Microphone</h3><p>Mynah needs Microphone access to capture your speech for local transcription.</p></article>
-      <article><h3>Accessibility</h3><p>Mynah needs Accessibility permission to place text at the active cursor in other Mac apps.</p></article>
-      <article><h3>Applications folder</h3><p>Run Mynah from <strong>/Applications/Mynah.app</strong> so macOS permissions attach to the correct app bundle.</p></article>
+    <h1>Permissions and installation.</h1>
+    <p class="hero-subtitle">Mynah is not from the App Store. macOS will ask you to approve it and grant two permissions. This page explains what to expect and how to fix common problems.</p>
+
+    <hr class="section-divider" />
+
+    <h2>Install Mynah correctly</h2>
+    <div class="step-grid">
+      <article class="step-card">
+        <span class="step-number">01</span>
+        <h3>Download</h3>
+        <p>Download Mynah only from <strong>mynah.site</strong>. Do not install from unofficial mirrors or unknown links.</p>
+      </article>
+      <article class="step-card">
+        <span class="step-number">02</span>
+        <h3>Move to Applications</h3>
+        <p>Open the DMG and drag <strong>Mynah.app</strong> into your <strong>Applications</strong> folder. Do not run it from Downloads, the Desktop, or the mounted DMG.</p>
+      </article>
+      <article class="step-card">
+        <span class="step-number">03</span>
+        <h3>Launch and approve</h3>
+        <p>Open Mynah from Applications. Approve the macOS security prompt, then grant Microphone and Accessibility when asked.</p>
+      </article>
     </div>
-    <p class="hero-subtitle">If you previously tested SpeakPaste, remove old SpeakPaste permission entries and approve Mynah fresh.</p>
+
+    <hr class="section-divider" />
+
+    <h2>Why macOS shows a security prompt</h2>
+    <div class="facts-list">
+      <div>
+        <strong>Not from the App Store</strong>
+        <span>Mynah is distributed directly from mynah.site. macOS may ask you to confirm you want to open it the first time.</span>
+      </div>
+      <div>
+        <strong>What to do</strong>
+        <span>If macOS blocks the app, open <strong>System Settings → Privacy &amp; Security</strong>, scroll to the Mynah message, and click <strong>Open Anyway</strong>. Then launch Mynah again from Applications.</span>
+      </div>
+      <div>
+        <strong>Is this safe?</strong>
+        <span>Yes. This prompt is normal for independently distributed Mac apps. Only approve it if you downloaded Mynah from mynah.site.</span>
+      </div>
+    </div>
+
+    <hr class="section-divider" />
+
+    <h2>Permissions Mynah needs</h2>
+    <div class="facts-list">
+      <div>
+        <strong>Microphone</strong>
+        <span>Mynah captures your voice while you hold Fn. Without this, the app cannot record speech. Enable it in <strong>System Settings → Privacy &amp; Security → Microphone</strong>.</span>
+      </div>
+      <div>
+        <strong>Accessibility</strong>
+        <span>Mynah uses Accessibility to place your transcript into the active app at the cursor. Without this, Fn and paste will not work. Enable it in <strong>System Settings → Privacy &amp; Security → Accessibility</strong>.</span>
+      </div>
+      <div>
+        <strong>macOS controls these</strong>
+        <span>Mynah cannot grant itself permissions. macOS requires you to approve them. If a permission is missing, dictation or paste will silently fail.</span>
+      </div>
+    </div>
+
+    <hr class="section-divider" />
+
+    <h2>Troubleshooting</h2>
+    <div class="faq-grid">
+      <details open>
+        <summary>Mynah won't open</summary>
+        <p>Open <strong>System Settings → Privacy &amp; Security</strong> and click <strong>Open Anyway</strong> next to the Mynah message. Then launch Mynah from Applications, not from Downloads or the DMG.</p>
+      </details>
+      <details>
+        <summary>Fn key does nothing</summary>
+        <p>Confirm Mynah is running (menu-bar icon visible). Check that both Microphone and Accessibility are enabled in System Settings. Quit and reopen Mynah from Applications. Test in TextEdit or Notes first.</p>
+      </details>
+      <details>
+        <summary>Recording works but text doesn't paste</summary>
+        <p>Confirm Accessibility permission is enabled. Click into a normal text field, then try again. Check that paste-at-cursor is enabled in Mynah settings. Restart Mynah if needed.</p>
+      </details>
+      <details>
+        <summary>Mynah doesn't appear in the permission list</summary>
+        <p>Quit Mynah. Open it from <strong>/Applications/Mynah.app</strong>. Trigger the action that needs the permission (e.g. hold Fn). Then return to System Settings — Mynah should now appear.</p>
+      </details>
+      <details>
+        <summary>Accessibility looks enabled but still doesn't work</summary>
+        <p>macOS can hold a stale entry from an older build. Quit Mynah. Remove any Mynah or SpeakPaste entries from <strong>System Settings → Accessibility</strong>. Add Mynah again from Applications. Enable it and restart Mynah. If it still fails, restart the Mac.</p>
+      </details>
+      <details>
+        <summary>I previously used SpeakPaste</summary>
+        <p>Mynah uses a new app identity (<strong>com.mynah.app</strong>). macOS treats it as a different app. Delete SpeakPaste.app and remove old SpeakPaste entries from Accessibility. Then install Mynah and approve permissions fresh.</p>
+      </details>
+      <details>
+        <summary>Menu bar icon is gone after closing the window</summary>
+        <p>Mynah is designed to stay running in the menu bar even when the main window is closed. If the menu-bar icon has disappeared, reopen Mynah from Applications.</p>
+      </details>
+      <details>
+        <summary>Still not working</summary>
+        <p>Quit Mynah. Restart the Mac. Open Mynah from Applications. Confirm both permissions are enabled. Test Fn in TextEdit. If the problem continues, contact <a href="mailto:irfan@teachmeai.in">irfan@teachmeai.in</a> with a description of the issue.</p>
+      </details>
+    </div>
+
+    <hr class="section-divider" />
+
+    <h2>About local diagnostics</h2>
+    <p>Mynah can store local diagnostics to help troubleshoot setup, permissions, latency, and paste behavior. Diagnostics are kept on your Mac and describe app health — not the words you dictate.</p>
+    <div class="facts-list">
+      <div><strong>What diagnostics include</strong><span>App version, permission state, trigger state, recording and transcription timing, paste success or failure, and local engine status.</span></div>
+      <div><strong>What diagnostics never include</strong><span>Raw audio, transcript text, clipboard content, or private content from other apps.</span></div>
+    </div>
+
   </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div><a class="brand footer-brand" href="/"><img src="/public/mynah_icon_highres.png" alt="" class="brand-mark" /><span>Mynah</span></a><p>Private voice-to-cursor for Mac.</p></div>
+      <div><h2>Product</h2><a href="/download/">Download</a><a href="/privacy/">Privacy</a><a href="/support/permissions/">Permissions</a></div>
+      <div><h2>Trust</h2><a href="/facts/">Facts</a><a href="/compare/">Compare</a><a href="/benchmarks/">Benchmarks</a><a href="/credits/">Credits</a></div>
+      <div><h2>Creator</h2><a href="mailto:irfan@teachmeai.in">irfan@teachmeai.in</a><a href="https://www.linkedin.com/in/irfankhalid/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="/credits/">About &amp; Credits</a></div>
+    </div>
+    <p class="copyright">© 2026 <a href="https://www.linkedin.com/in/irfankhalid/" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:underline;text-underline-offset:3px">Khalid Irfan</a> · Built for local Mac dictation.</p>
+  </footer>
 </body>
 </html>

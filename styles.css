@@ -414,6 +414,12 @@ h3 {
   font-size: 0.95rem;
 }
 
+.section-divider {
+  border: none;
+  border-top: 1px solid var(--line);
+  margin: 3.5rem 0;
+}
+
 .comparison-table {
   overflow: hidden;
   margin: 2rem 0 1rem;
