@@ -34,33 +34,57 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Inject full nav on sub-pages
-  // The homepage has nav-links already; sub-pages don't — detect by absence
+  // Inject full nav and setup mobile toggle on all pages
   const nav = document.querySelector('.nav-shell');
-  const isSubPage = nav && !nav.querySelector('.nav-links');
-  if (!isSubPage) return;
+  if (nav) {
+    nav.innerHTML = `
+      <a class="brand" href="/" aria-label="Mynah home">
+        <img src="/public/mynah_icon_highres.png" alt="" class="brand-mark" />
+        <span>Mynah</span>
+      </a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/compare/">Compare</a>
+        <a href="/credits/">About</a>
+        <a href="/support/permissions/">Help</a>
+        <a href="/download/" class="nav-mobile-cta">Download</a>
+      </div>
+      <a class="nav-cta" href="/download/">Download</a>
+    `;
 
-  nav.innerHTML = `
-    <a class="brand" href="/" aria-label="Mynah home">
-      <img src="/public/mynah_icon_highres.png" alt="" class="brand-mark" />
-      <span>Mynah</span>
-    </a>
-    <div class="nav-links">
-      <a href="/">Home</a>
-      <a href="/compare/">Compare</a>
-      <a href="/credits/">About</a>
-      <a href="/support/permissions/">Help</a>
-    </div>
-    <a class="nav-cta" href="/download/">Download</a>
-  `;
+    // Mark the active page link
+    const path = window.location.pathname.replace(/\/$/, '') || '/';
+    nav.querySelectorAll('.nav-links a:not(.nav-mobile-cta)').forEach((link) => {
+      const href = link.getAttribute('href').replace(/\/$/, '') || '/';
+      if (path === href || (href !== '/' && path.startsWith(href))) {
+        link.style.color = 'var(--brand)';
+        link.style.fontWeight = '800';
+      }
+    });
 
-  // Mark the active page link
-  const path = window.location.pathname.replace(/\/$/, '') || '/';
-  nav.querySelectorAll('.nav-links a').forEach((link) => {
-    const href = link.getAttribute('href').replace(/\/$/, '') || '/';
-    if (path === href || (href !== '/' && path.startsWith(href))) {
-      link.style.color = 'var(--brand)';
-      link.style.fontWeight = '800';
-    }
-  });
+    // Create & append hamburger button dynamically
+    const toggleBtn = document.createElement('button');
+    toggleBtn.className = 'hamburger-btn';
+    toggleBtn.setAttribute('aria-label', 'Toggle menu');
+    toggleBtn.innerHTML = `
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    `;
+    nav.appendChild(toggleBtn);
+
+    // Toggle menu events
+    toggleBtn.addEventListener('click', () => {
+      nav.classList.toggle('mobile-menu-active');
+      document.body.classList.toggle('menu-open');
+    });
+
+    // Close menu when links are clicked
+    nav.querySelectorAll('.nav-links a').forEach((link) => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('mobile-menu-active');
+        document.body.classList.remove('menu-open');
+      });
+    });
+  }
 });
