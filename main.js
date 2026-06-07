@@ -1,5 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Smooth scroll for anchor links
+  // Smooth scroll with sticky header offset (100px)
+  const offset = 100;
+
+  const scrollToElement = (element) => {
+    const elementPosition = element.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - offset;
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    });
+  };
+
+  // Handle local anchor links
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener('click', (event) => {
       const targetId = anchor.getAttribute('href');
@@ -7,9 +19,20 @@ document.addEventListener('DOMContentLoaded', () => {
       const targetElement = document.querySelector(targetId);
       if (!targetElement) return;
       event.preventDefault();
-      targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      scrollToElement(targetElement);
     });
   });
+
+  // Handle hash on page load
+  if (window.location.hash) {
+    const targetElement = document.querySelector(window.location.hash);
+    if (targetElement) {
+      // Small timeout to let content/styles settle before scrolling
+      setTimeout(() => {
+        scrollToElement(targetElement);
+      }, 200);
+    }
+  }
 
   // Inject full nav on sub-pages
   // The homepage has nav-links already; sub-pages don't — detect by absence

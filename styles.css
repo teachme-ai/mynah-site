@@ -13,6 +13,11 @@
   --radius: 22px;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
 * {
   box-sizing: border-box;
 }
