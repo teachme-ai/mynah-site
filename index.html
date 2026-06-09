@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mynah - Private Voice-to-Cursor for Mac</title>
-  <meta name="description" content="Mynah is a local-first Mac dictation app. Hold Fn, speak naturally, and paste text into the active cursor without requiring a cloud account or monthly subscription." />
+  <title>Mynah - Private Mac Dictation You Own</title>
+  <meta name="description" content="Mynah is a private Mac dictation app for unfinished thoughts. Hold Fn, speak naturally, and paste polished text at the active cursor without cloud transcription or a monthly meter." />
   <meta name="theme-color" content="#f7faf8" />
   <link rel="canonical" href="https://mynah.site/" />
   <link rel="icon" type="image/png" href="/public/favicon.png" />
@@ -13,8 +13,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/styles.css" />
-  <meta property="og:title" content="Mynah - Private Voice-to-Cursor for Mac" />
-  <meta property="og:description" content="Hold Fn, speak, release. Mynah transcribes locally and pastes at the active cursor." />
+  <meta property="og:title" content="Mynah - Private Mac Dictation You Own" />
+  <meta property="og:description" content="Hold Fn, speak, release. Mynah turns unfinished speech into text at your active cursor, locally on your Mac." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mynah.site/" />
   <meta property="og:image" content="https://mynah.site/public/mynah_icon_highres.png" />
@@ -28,7 +28,7 @@
       "description": "Mynah is a private voice-to-cursor app for Mac. Hold Fn, speak, release, and Mynah transcribes locally and pastes at the active cursor.",
       "url": "https://mynah.site/",
       "downloadUrl": "https://mynah.site/download/",
-      "softwareVersion": "0.1.1",
+      "softwareVersion": "1.0.0",
       "offers": {
         "@type": "Offer",
         "price": "29",
@@ -61,44 +61,55 @@
         <a href="#pricing">Pricing</a>
         <a href="/compare/">Compare</a>
       </div>
-      <a class="nav-cta" href="/download/">Download trial</a>
+      <a class="nav-cta" href="/download/">Download Mynah</a>
     </nav>
   </header>
 
   <main id="main">
-    <section class="hero section">
+    <section class="hero section hero-showcase">
       <div class="hero-copy">
-        <p class="eyebrow">Private voice-to-cursor for macOS</p>
-        <h1>Hold Fn. Speak. Paste.</h1>
+        <p class="eyebrow">Private Mac dictation you own</p>
+        <h1>Speak the messy version. Paste the polished one.</h1>
         <p class="hero-subtitle">
-          Mynah is a local-first Mac menu-bar app that turns speech into text at your active cursor.
-          No account. No cloud required for core dictation. No monthly subscription meter.
+          Mynah turns unfinished speech into clean text at your active cursor. Hold Fn,
+          speak naturally, release, and keep your voice on your Mac.
         </p>
         <div class="hero-actions">
-          <a class="button button-primary" href="/download/">Download trial/beta</a>
-          <a class="button button-secondary" href="#how">See the flow</a>
+          <a class="button button-primary" href="/download/">Download Mynah for Mac</a>
+          <a class="button button-secondary" href="#demo">Watch the voice flow</a>
         </div>
         <ul class="trust-row" aria-label="Product highlights">
+          <li>Version 1.0.0</li>
           <li>Local-first</li>
-          <li>Menu-bar native</li>
-          <li>One-time license</li>
-          <li>Apple Silicon ready</li>
+          <li>No account</li>
+          <li>$29 one-time</li>
+          <li>Apple Silicon</li>
         </ul>
       </div>
-      <div class="hero-card" aria-label="Mynah product summary">
-        <img src="/public/mynah_icon_highres.png" alt="Mynah app icon" class="hero-icon" />
-        <div class="signal-card">
-          <span class="status-dot"></span>
-          <div>
-            <strong>On-device signal</strong>
-            <p>whisper.cpp · local model · paste at cursor</p>
+      <div class="dictation-demo" id="demo" aria-label="Mynah voice-to-cursor demo">
+        <div class="demo-titlebar">
+          <span></span><span></span><span></span>
+          <strong>Mynah is listening locally</strong>
+        </div>
+        <div class="demo-stage">
+          <div class="demo-input">
+            <span class="demo-label">You say</span>
+            <p>umm remind raj the build is notarized but ask him to test accessibility again before we ship</p>
+            <div class="waveform" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+          <div class="demo-output">
+            <span class="demo-label">Mynah pastes</span>
+            <p>Raj, the build is notarized. Please test Accessibility again before we ship.</p>
+            <span class="typing-cursor" aria-hidden="true"></span>
           </div>
         </div>
-        <div class="mini-flow">
+        <div class="demo-flow">
           <span>Fn down</span>
-          <span>Speak</span>
+          <span>Local model</span>
           <span>Release</span>
-          <span>Paste</span>
+          <span>Paste at cursor</span>
         </div>
       </div>
     </section>
@@ -106,74 +117,134 @@
     <section class="section flow-section" id="how">
       <div class="section-heading">
         <p class="eyebrow">Core loop</p>
-        <h2>One gesture. One flow.</h2>
-        <p>Mynah is designed around a daily Mac reflex, not a complex transcription workbench.</p>
+        <h2>One Mac reflex. No transcription workbench.</h2>
+        <p>Mynah is designed for the moment you are already writing, not for uploading files or managing a cloud account.</p>
       </div>
       <div class="step-grid">
         <article class="step-card">
           <span class="step-number">01</span>
           <h3>Hold Fn</h3>
-          <p>Start dictation with the native Mac Fn key. The main window does not need to be open.</p>
+          <p>Start dictation with the native Mac Fn key. Mynah can stay quietly in the menu bar.</p>
         </article>
         <article class="step-card">
           <span class="step-number">02</span>
-          <h3>Speak naturally</h3>
-          <p>Mynah captures audio locally and prepares it for on-device transcription.</p>
+          <h3>Speak the rough draft</h3>
+          <p>Think out loud, include pauses, and let Mynah turn speech into usable text locally.</p>
         </article>
         <article class="step-card">
           <span class="step-number">03</span>
           <h3>Release to paste</h3>
-          <p>Your transcript is placed where you were already writing, across Mac text fields.</p>
+          <p>Your transcript lands in the app you were already using: Mail, Notes, chat, editors, or AI prompts.</p>
         </article>
+      </div>
+    </section>
+
+    <section class="section workflow-section">
+      <div class="section-heading">
+        <p class="eyebrow">Use it everywhere you type</p>
+        <h2>Same gesture. Different kinds of writing.</h2>
+        <p>Wispr-style polish is useful, but Mynah keeps the loop smaller, calmer, and private on your Mac.</p>
+      </div>
+      <div class="workflow-tabs" role="tablist" aria-label="Mynah workflow examples">
+        <button class="workflow-tab active" type="button" data-workflow="email">Email</button>
+        <button class="workflow-tab" type="button" data-workflow="chat">Chat</button>
+        <button class="workflow-tab" type="button" data-workflow="prompt">AI prompt</button>
+        <button class="workflow-tab" type="button" data-workflow="notes">Notes</button>
+      </div>
+      <div class="workflow-card" data-workflow-card>
+        <div>
+          <span class="demo-label">Spoken thought</span>
+          <p data-workflow-raw>tell the team i checked the accessibility flow and the app now opens as a proper mac settings window</p>
+        </div>
+        <div>
+          <span class="demo-label">Pasted text</span>
+          <p data-workflow-polished>I checked the Accessibility flow. The app now opens Settings as a proper Mac preferences window.</p>
+        </div>
       </div>
     </section>
 
     <section class="section split-section" id="privacy">
       <div>
         <p class="eyebrow">Local control</p>
-        <h2>Your voice should stay on your Mac.</h2>
+        <h2>Your voice should not need a round trip to someone else's server.</h2>
         <p>
-          Mynah is shaped around local transcription and local diagnostics. The core dictation loop
-          does not require a cloud account or remote transcription service.
+          Cloud dictation can be magical, but it asks you to send raw, unfinished thoughts away.
+          Mynah is built for the opposite feeling: speak privately, process locally, paste deliberately.
         </p>
       </div>
-      <div class="facts-list">
-        <div><strong>Voice audio</strong><span>Processed locally for core dictation</span></div>
-        <div><strong>Transcript text</strong><span>Kept local unless you paste or copy elsewhere</span></div>
-        <div><strong>Diagnostics</strong><span>Local runtime health, not your words</span></div>
-        <div><strong>Account</strong><span>Not required for core use</span></div>
+      <div class="privacy-map" aria-label="Mynah privacy route">
+        <div class="privacy-path privacy-path-cloud">
+          <strong>Cloud dictation</strong>
+          <span>Mic</span><span>Internet</span><span>Remote servers</span><span>Account</span><span>Text</span>
+        </div>
+        <div class="privacy-path privacy-path-local">
+          <strong>Mynah</strong>
+          <span>Mic</span><span>Local model</span><span>Your Mac</span><span>Active cursor</span>
+        </div>
       </div>
     </section>
 
     <section class="section">
       <div class="section-heading">
-        <p class="eyebrow">Built for Mac work</p>
-        <h2>Small utility. Serious runtime.</h2>
+        <p class="eyebrow">Mac-native where it matters</p>
+        <h2>A quiet utility, not another noisy AI dashboard.</h2>
       </div>
-      <div class="feature-grid">
-        <article><h3>Menu-bar runtime</h3><p>Mynah stays available from the menu bar and keeps working when the main window is hidden.</p></article>
-        <article><h3>Clipboard-respectful paste</h3><p>Choose how Mynah handles existing clipboard text instead of blindly replacing it.</p></article>
-        <article><h3>Local engines</h3><p>Use local transcription engines and model files, including whisper.cpp.</p></article>
-        <article><h3>Hardware-aware profiles</h3><p>Pick a simple local profile for balanced use, basic Macs, or Apple Silicon accuracy.</p></article>
-        <article><h3>Local diagnostics</h3><p>Inspect performance and support data stored on your Mac without transcript logging.</p></article>
-        <article><h3>Transparent technology</h3><p>Mynah names the local engines, frameworks, and permissions it depends on.</p></article>
+      <div class="mac-product-grid">
+        <div class="mac-preview-card">
+          <div class="demo-titlebar">
+            <span></span><span></span><span></span>
+            <strong>Settings</strong>
+          </div>
+          <div class="settings-preview">
+            <aside>
+              <span class="active">General</span>
+              <span>Dictation</span>
+              <span>Models</span>
+              <span>Privacy</span>
+            </aside>
+            <main>
+              <div><strong>Dictation trigger</strong><span>Fn key</span></div>
+              <div><strong>Paste at cursor</strong><span>On</span></div>
+              <div><strong>Appearance</strong><span>Mynah Blue</span></div>
+            </main>
+          </div>
+        </div>
+        <div class="feature-grid feature-grid-compact">
+          <article><h3>Menu-bar runtime</h3><p>Available from the menu bar, even when the main window is hidden.</p></article>
+          <article><h3>Fn-first dictation</h3><p>Hold, speak, release. A daily Mac reflex instead of a mode switch.</p></article>
+          <article><h3>Clipboard-respectful paste</h3><p>Choose how Mynah handles existing clipboard text.</p></article>
+          <article><h3>Local model control</h3><p>Use local transcription engines and model files, including whisper.cpp.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section proof-section">
+      <div class="section-heading">
+        <p class="eyebrow">Launch trust</p>
+        <h2>Built for direct Mac distribution.</h2>
+        <p>For 1.0, Mynah is moving from a beta-style download to a proper signed, notarized Mac release flow.</p>
+      </div>
+      <div class="proof-grid">
+        <article><strong>Apple Developer Program</strong><span>Prepared for Developer ID signing and notarization.</span></article>
+        <article><strong>Transparent checksum</strong><span>The download page publishes the SHA-256 hash for the current DMG.</span></article>
+        <article><strong>Permission guide</strong><span>Microphone and Accessibility setup are explained before users get stuck.</span></article>
+        <article><strong>Local-first facts</strong><span>Facts, credits, and technology notes are public and agent-readable.</span></article>
       </div>
     </section>
 
     <section class="section pricing-section" id="pricing">
       <div class="pricing-card">
         <p class="eyebrow">One-time lifetime license</p>
-        <h2>Pay once for the Mac utility.</h2>
+        <h2>A Mac utility you own.</h2>
         <p>
-          Mynah is built as a local app, not a cloud transcription meter. Buy a lifetime license once
-          and keep using the Mac app without a monthly subscription.
+          Mynah is built as a local app, not a cloud transcription meter. Pay once and keep using the Mac app without a monthly word quota.
         </p>
         <div class="price-primary"><span class="price-amount">$29</span><span class="price-label">USD · Worldwide</span></div>
         <div class="price-india"><span class="price-india-badge">India price</span><span class="price-india-amount">₹1499</span></div>
         <p class="fine-print">
-          The first public build will use a trial/beta download until the final DMG and purchase flow are published.
+          Version 1.0.0 is being prepared as the first notarized public release package.
         </p>
-        <a class="button button-primary" href="/download/">Download trial/beta</a>
+        <a class="button button-primary" href="/download/">Download Mynah</a>
       </div>
     </section>
 

@@ -237,6 +237,11 @@ h3 {
 }
 
 .hero-card,
+.dictation-demo,
+.workflow-card,
+.mac-preview-card,
+.privacy-map,
+.proof-grid article,
 .pricing-card,
 .step-card,
 .feature-grid article,
@@ -304,6 +309,302 @@ h3 {
   color: var(--brand-dark);
   font-weight: 800;
   font-size: 0.86rem;
+}
+
+.hero-showcase h1 {
+  font-size: clamp(3rem, 6.4vw, 6.6rem);
+}
+
+.dictation-demo {
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(241, 248, 244, 0.8)),
+    radial-gradient(circle at 70% 8%, rgba(34, 201, 147, 0.18), transparent 18rem);
+}
+
+.demo-titlebar {
+  display: flex;
+  align-items: center;
+  gap: 0.48rem;
+  padding: 1rem 1.1rem;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.demo-titlebar span {
+  width: 0.72rem;
+  height: 0.72rem;
+  border-radius: 50%;
+  background: #ef6351;
+}
+
+.demo-titlebar span:nth-child(2) {
+  background: #f7b955;
+}
+
+.demo-titlebar span:nth-child(3) {
+  background: #45c47b;
+  margin-right: 0.55rem;
+}
+
+.demo-stage {
+  display: grid;
+  gap: 1rem;
+  padding: clamp(1rem, 3vw, 1.6rem);
+}
+
+.demo-input,
+.demo-output,
+.workflow-card > div {
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.76);
+  border-radius: 18px;
+  padding: 1.2rem;
+}
+
+.demo-label {
+  display: inline-flex;
+  margin-bottom: 0.7rem;
+  color: var(--brand);
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.demo-input p,
+.demo-output p,
+.workflow-card p {
+  margin-bottom: 0;
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  letter-spacing: -0.025em;
+}
+
+.demo-input p {
+  color: var(--muted);
+}
+
+.demo-output {
+  position: relative;
+  box-shadow: inset 0 0 0 1px rgba(23, 109, 85, 0.08);
+}
+
+.typing-cursor {
+  display: inline-block;
+  width: 0.55rem;
+  height: 1.25rem;
+  margin-left: 0.2rem;
+  border-radius: 999px;
+  background: var(--brand);
+  animation: cursor-blink 1s steps(2, start) infinite;
+}
+
+.waveform {
+  display: flex;
+  align-items: center;
+  gap: 0.28rem;
+  height: 2.4rem;
+  margin-top: 1rem;
+}
+
+.waveform span {
+  width: 0.48rem;
+  height: 0.8rem;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #22c993, var(--brand-dark));
+  animation: wave-pulse 1.15s ease-in-out infinite;
+}
+
+.waveform span:nth-child(2) { animation-delay: 80ms; }
+.waveform span:nth-child(3) { animation-delay: 160ms; }
+.waveform span:nth-child(4) { animation-delay: 240ms; }
+.waveform span:nth-child(5) { animation-delay: 320ms; }
+.waveform span:nth-child(6) { animation-delay: 400ms; }
+.waveform span:nth-child(7) { animation-delay: 480ms; }
+
+.demo-flow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0 1.6rem 1.5rem;
+}
+
+.demo-flow span {
+  padding: 0.45rem 0.7rem;
+  border: 1px solid rgba(23, 109, 85, 0.16);
+  background: var(--brand-soft);
+  border-radius: 999px;
+  color: var(--brand-dark);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.workflow-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-bottom: 1rem;
+}
+
+.workflow-tab {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.76);
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 800;
+  padding: 0.72rem 1rem;
+}
+
+.workflow-tab.active,
+.workflow-tab:hover {
+  background: var(--ink);
+  color: #fff;
+}
+
+.workflow-card {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.privacy-map {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.privacy-path {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 1rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--line);
+}
+
+.privacy-path strong {
+  width: 100%;
+  letter-spacing: -0.03em;
+}
+
+.privacy-path span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.2rem;
+  padding: 0.42rem 0.72rem;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 0.84rem;
+}
+
+.privacy-path-cloud span {
+  background: rgba(100, 113, 107, 0.11);
+  color: var(--muted);
+}
+
+.privacy-path-local {
+  border-color: rgba(23, 109, 85, 0.28);
+  box-shadow: inset 0 0 0 1px rgba(23, 109, 85, 0.08);
+}
+
+.privacy-path-local span {
+  background: var(--brand-soft);
+  color: var(--brand-dark);
+}
+
+.mac-product-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.mac-preview-card {
+  overflow: hidden;
+}
+
+.settings-preview {
+  display: grid;
+  grid-template-columns: 13rem 1fr;
+  min-height: 330px;
+}
+
+.settings-preview aside {
+  display: grid;
+  align-content: start;
+  gap: 0.4rem;
+  padding: 1rem;
+  border-right: 1px solid var(--line);
+  background: rgba(238, 244, 241, 0.66);
+}
+
+.settings-preview aside span,
+.settings-preview main div {
+  border-radius: 12px;
+  padding: 0.75rem 0.85rem;
+}
+
+.settings-preview aside span.active {
+  background: var(--surface);
+  color: var(--brand-dark);
+  font-weight: 850;
+  box-shadow: 0 8px 20px rgba(20, 42, 34, 0.08);
+}
+
+.settings-preview main {
+  display: grid;
+  align-content: center;
+  gap: 0.75rem;
+  padding: 1.25rem;
+}
+
+.settings-preview main div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.settings-preview main span {
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.feature-grid-compact {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.proof-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.proof-grid article {
+  padding: 1.25rem;
+}
+
+.proof-grid span {
+  display: block;
+  margin-top: 0.55rem;
+  color: var(--muted);
+}
+
+@keyframes wave-pulse {
+  0%, 100% { height: 0.75rem; opacity: 0.58; }
+  50% { height: 2.15rem; opacity: 1; }
+}
+
+@keyframes cursor-blink {
+  0%, 45% { opacity: 1; }
+  46%, 100% { opacity: 0; }
 }
 
 .section-heading {
@@ -737,6 +1038,8 @@ body.menu-open {
 
   .hero,
   .split-section,
+  .workflow-card,
+  .mac-product-grid,
   .footer-grid {
     grid-template-columns: 1fr;
   }
@@ -752,8 +1055,19 @@ body.menu-open {
 
   .step-grid,
   .feature-grid,
+  .feature-grid-compact,
+  .proof-grid,
   .faq-grid {
     grid-template-columns: 1fr;
+  }
+
+  .settings-preview {
+    grid-template-columns: 1fr;
+  }
+
+  .settings-preview aside {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
   }
 
   .comparison-table {

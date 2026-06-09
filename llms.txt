@@ -16,6 +16,7 @@
 ## Product Facts
 
 - Product name: Mynah
+- Current version: 1.0.0
 - Platform: macOS
 - App type: menu-bar dictation utility
 - Core loop: hold Fn, speak, release to paste
@@ -24,6 +25,7 @@
 - Cloud requirement: none for core dictation
 - Pricing model: one-time lifetime license
 - Price: $29 USD or ₹1499 INR
+- Release status: preparing notarized 1.0.0 DMG for direct download
 - Support: irfan@teachmeai.in
 - Primary technology: local speech transcription engines including whisper.cpp
 
