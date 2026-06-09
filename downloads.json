@@ -1,12 +1,33 @@
 {
   "product": "Mynah",
   "version": "1.0.0",
-  "release": null,
+  "release": {
+    "number": 151,
+    "bundleVersion": "151",
+    "buildSignature": "1.0.0+r151.f4a56650fd7f",
+    "builtAtIso": "2026-06-09T13:24:31.613Z",
+    "gitCommit": "f4a56650fd7f"
+  },
   "pricing": {
     "usd": 29,
     "inr": 1499,
     "model": "one-time lifetime license"
   },
-  "artifacts": [],
-  "status": "preparing-1.0.0-notarized-dmg"
+  "artifacts": [
+    {
+      "platform": "macos",
+      "arch": "aarch64",
+      "label": "Apple Silicon",
+      "filename": "Mynah_1.0.0_aarch64.dmg",
+      "url": "https://mynah.site/public/Mynah_1.0.0_aarch64.dmg",
+      "size_mb": 15,
+      "sha256": "72eee8febdb7bf2f26741ed583e47d2d993e303faea68f15741072b77d49abfc",
+      "min_os": "10.15",
+      "notarized": true,
+      "stapled": true,
+      "signedBy": "Developer ID Application: Khalid Irfan (99YAK7YU3M)",
+      "notes": "Apple Silicon. Signed with Developer ID, notarized by Apple, and stapled for Gatekeeper validation."
+    }
+  ],
+  "status": "released"
 }
