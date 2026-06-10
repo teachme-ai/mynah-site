@@ -2,8 +2,8 @@
   "product": "Mynah",
   "version": "1.0.0",
   "release": {
-    "number": 151,
-    "bundleVersion": "151",
+    "number": 164,
+    "bundleVersion": "164",
     "buildSignature": "1.0.0+r151.f4a56650fd7f",
     "builtAtIso": "2026-06-09T13:24:31.613Z",
     "gitCommit": "f4a56650fd7f"
@@ -21,7 +21,7 @@
       "filename": "Mynah_1.0.0_aarch64.dmg",
       "url": "https://mynah.site/public/Mynah_1.0.0_aarch64.dmg",
       "size_mb": 15,
-      "sha256": "72eee8febdb7bf2f26741ed583e47d2d993e303faea68f15741072b77d49abfc",
+      "sha256": "09bca1bf7e4bff3f23e0919fceafb7955643413e3a577c8e346038eeae8d9694",
       "min_os": "10.15",
       "notarized": true,
       "stapled": true,
