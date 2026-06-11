@@ -25,10 +25,10 @@
 - Cloud requirement: none for core dictation
 - Pricing model: one-time lifetime license
 - Price: $29 USD or ₹1499 INR
-- Release number: 174
-- Build signature: 1.0.0+r174.bb57f81925eb
-- Apple Silicon DMG URL: https://mynah.site/public/Mynah_Trial_1.0.0_b174_macos_aarch64.dmg
-- SHA256: 91a420426022a1572f6bbe1784719eebc035f5686a91b2c81dae81bed137718d
+- Release number: 177
+- Build signature: 1.0.0+r177.4b22a4809fcc
+- Apple Silicon DMG URL: https://mynah.site/public/Mynah_Trial_1.0.0_b177_macos_aarch64.dmg
+- SHA256: f95924916b5f9274502dbc9519cf4bea0a356e2e901a66746cdd8b6bb611b1b4
 - Notarized: yes
 - Stapled: yes
 - Signed by: Developer ID Application: Khalid Irfan (99YAK7YU3M)
