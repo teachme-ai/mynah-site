@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mynah - Private Mac Dictation You Own</title>
-  <meta name="description" content="Mynah is a private Mac dictation app for unfinished thoughts. Hold Fn, speak naturally, and paste polished text at the active cursor without cloud transcription or a monthly meter." />
+  <meta name="description" content="Mynah is a private voice-to-cursor app for Mac. Hold Fn, speak, release, and paste local transcription wherever your cursor already is. No cloud transcription, no account, no subscription meter." />
   <meta name="theme-color" content="#f7faf8" />
   <link rel="canonical" href="https://mynah.site/" />
   <link rel="icon" type="image/png" href="/public/favicon.png" />
@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/styles.css" />
   <meta property="og:title" content="Mynah - Private Mac Dictation You Own" />
-  <meta property="og:description" content="Hold Fn, speak, release. Mynah turns unfinished speech into text at your active cursor, locally on your Mac." />
+  <meta property="og:description" content="Hold Fn, speak, release. Mynah transcribes locally on your Mac and pastes at the active cursor." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mynah.site/" />
   <meta property="og:image" content="https://mynah.site/public/mynah_icon_highres.png" />
@@ -61,7 +61,7 @@
         <a href="#pricing">Pricing</a>
         <a href="/compare/">Compare</a>
       </div>
-      <a class="nav-cta" href="/download/">Download Mynah</a>
+      <a class="nav-cta" href="/download/">Download 60-day trial</a>
     </nav>
   </header>
 
@@ -69,21 +69,21 @@
     <section class="hero section hero-showcase">
       <div class="hero-copy">
         <p class="eyebrow">Private Mac dictation you own</p>
-        <h1>Speak the messy version. Paste the polished one.</h1>
+        <h1>Local voice typing for your Mac.</h1>
         <p class="hero-subtitle">
-          Mynah turns unfinished speech into clean text at your active cursor. Hold Fn,
-          speak naturally, release, and keep your voice on your Mac.
+          Hold Fn, speak, release. Mynah transcribes locally on your Mac and pastes
+          wherever your cursor already is, without cloud transcription or a monthly meter.
         </p>
         <div class="hero-actions">
-          <a class="button button-primary" href="/download/">Download Mynah for Mac</a>
-          <a class="button button-secondary" href="#demo">Watch the voice flow</a>
+          <a class="button button-primary" href="/download/">Download 60-day trial</a>
+          <a class="button button-secondary" href="#how">See the flow</a>
         </div>
         <ul class="trust-row" aria-label="Product highlights">
           <li>Version 1.0.0</li>
           <li>Local-first</li>
           <li>No account</li>
           <li>$29 one-time</li>
-          <li>Apple Silicon</li>
+          <li>Apple Silicon + Intel</li>
         </ul>
       </div>
       <div class="dictation-demo" id="demo" aria-label="Mynah voice-to-cursor demo">
@@ -94,14 +94,14 @@
         <div class="demo-stage">
           <div class="demo-input">
             <span class="demo-label">You say</span>
-            <p>umm remind raj the build is notarized but ask him to test accessibility again before we ship</p>
+            <p>remind Raj the build is notarized and ask him to test accessibility before we ship</p>
             <div class="waveform" aria-hidden="true">
               <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
             </div>
           </div>
           <div class="demo-output">
             <span class="demo-label">Mynah pastes</span>
-            <p>Raj, the build is notarized. Please test Accessibility again before we ship.</p>
+            <p>remind Raj the build is notarized and ask him to test accessibility before we ship</p>
             <span class="typing-cursor" aria-hidden="true"></span>
           </div>
         </div>
@@ -128,8 +128,8 @@
         </article>
         <article class="step-card">
           <span class="step-number">02</span>
-          <h3>Speak the rough draft</h3>
-          <p>Think out loud, include pauses, and let Mynah turn speech into usable text locally.</p>
+          <h3>Speak naturally</h3>
+          <p>Say the words you want to place into the current app. Mynah handles local transcription on this Mac.</p>
         </article>
         <article class="step-card">
           <span class="step-number">03</span>
@@ -143,7 +143,7 @@
       <div class="section-heading">
         <p class="eyebrow">Use it everywhere you type</p>
         <h2>Same gesture. Different kinds of writing.</h2>
-        <p>Wispr-style polish is useful, but Mynah keeps the loop smaller, calmer, and private on your Mac.</p>
+        <p>Mynah focuses on faithful local dictation: messages, notes, prompts, and replies in the app you already have open.</p>
       </div>
       <div class="workflow-tabs" role="tablist" aria-label="Mynah workflow examples">
         <button class="workflow-tab active" type="button" data-workflow="email">Email</button>
@@ -153,12 +153,12 @@
       </div>
       <div class="workflow-card" data-workflow-card>
         <div>
-          <span class="demo-label">Spoken thought</span>
-          <p data-workflow-raw>tell the team i checked the accessibility flow and the app now opens as a proper mac settings window</p>
+          <span class="demo-label">You say</span>
+          <p data-workflow-raw>tell the team i checked the accessibility flow and the app now opens as a proper Mac settings window</p>
         </div>
         <div>
-          <span class="demo-label">Pasted text</span>
-          <p data-workflow-polished>I checked the Accessibility flow. The app now opens Settings as a proper Mac preferences window.</p>
+          <span class="demo-label">Mynah pastes</span>
+          <p data-workflow-pasted>tell the team i checked the accessibility flow and the app now opens as a proper Mac settings window</p>
         </div>
       </div>
     </section>
@@ -168,7 +168,7 @@
         <p class="eyebrow">Local control</p>
         <h2>Your voice should not need a round trip to someone else's server.</h2>
         <p>
-          Cloud dictation can be magical, but it asks you to send raw, unfinished thoughts away.
+          Cloud dictation can be powerful, but it often asks you to send voice data away.
           Mynah is built for the opposite feeling: speak privately, process locally, paste deliberately.
         </p>
       </div>
@@ -227,7 +227,7 @@
       <div class="proof-grid">
         <article><strong>Apple Developer Program</strong><span>Signed with Developer ID and notarized by Apple.</span></article>
         <article><strong>Transparent checksum</strong><span>The download page publishes the SHA-256 hash for the current DMG.</span></article>
-        <article><strong>Permission guide</strong><span>Microphone and Accessibility setup are explained before users get stuck.</span></article>
+        <article><strong>Guided first run</strong><span>Microphone, Accessibility, and local model setup are explained before first use.</span></article>
         <article><strong>Local-first facts</strong><span>Facts, credits, and technology notes are public and agent-readable.</span></article>
       </div>
     </section>
@@ -242,9 +242,9 @@
         <div class="price-primary"><span class="price-amount">$29</span><span class="price-label">USD · Worldwide</span></div>
         <div class="price-india"><span class="price-india-badge">India price</span><span class="price-india-amount">₹1499</span></div>
         <p class="fine-print">
-          Version 1.0.0 is signed with Developer ID, notarized by Apple, and ready for direct Mac installation.
+          Try Mynah free on your Mac for 60 days. After that, purchase a lifetime license to keep using the app.
         </p>
-        <a class="button button-primary" href="/download/">Download Mynah</a>
+        <a class="button button-primary" href="/download/">Download 60-day trial</a>
       </div>
     </section>
 
@@ -252,7 +252,7 @@
       <div class="section-heading">
         <p class="eyebrow">Why Mynah</p>
         <h2>Why Mynah instead of another dictation app?</h2>
-        <p>Mynah is built for people who want a private Mac utility they own, not another cloud subscription or a file transcription workstation.</p>
+        <p>Mynah is built for people who want private voice typing on a Mac, not another cloud subscription or a file transcription workstation.</p>
       </div>
       <div class="decision-table-wrap">
         <table class="decision-table" role="table" aria-label="Mynah vs competitors quick comparison">
@@ -291,9 +291,11 @@
         <h2>Plain answers.</h2>
       </div>
       <div class="faq-grid">
-        <details open name="home-faq"><summary>Is Mynah a subscription?</summary><p>No. Mynah is a one-time lifetime license for the Mac app.</p></details>
+        <details open><summary>How does the trial work?</summary><p>Mynah includes a fully-featured 60-day trial. After 60 days, the app will prompt you to purchase a lifetime license to continue using it.</p></details>
+        <details><summary>Is Mynah a subscription?</summary><p>No. Mynah is a one-time lifetime license for the Mac app.</p></details>
         <details name="home-faq"><summary>Is Mynah from the Apple App Store?</summary><p>No. Mynah is distributed directly from mynah.site. macOS may ask you to approve it on first launch — this is expected for independently distributed apps.</p></details>
-        <details name="home-faq"><summary>Does Mynah need cloud transcription?</summary><p>No cloud service is required for the core local dictation loop. Mynah uses whisper.cpp running on your Mac.</p></details>
+        <details name="home-faq"><summary>Does Mynah rewrite or polish my speech?</summary><p>No. Mynah is currently focused on faithful local transcription and cursor paste. Advanced local text rules may exist for power users, but rewriting is not the core promise.</p></details>
+        <details name="home-faq"><summary>Does Mynah need cloud transcription?</summary><p>No cloud service is required for the core local dictation loop. Mynah uses local engines such as whisper.cpp running on your Mac.</p></details>
         <details name="home-faq"><summary>Why does Mynah need Accessibility?</summary><p>macOS requires Accessibility permission for Mynah to place text into the active app at your cursor.</p></details>
         <details name="home-faq"><summary>Does Mynah work when the window is closed?</summary><p>Yes. Mynah is designed as a menu-bar utility. Closing the window does not quit the app — the icon stays in the menu bar and Fn keeps working.</p></details>
         <details name="home-faq"><summary>I used SpeakPaste before. Do I need to approve Mynah again?</summary><p>Yes. Mynah is a new app identity. Remove old SpeakPaste entries from Accessibility in System Settings and approve Mynah fresh.</p></details>

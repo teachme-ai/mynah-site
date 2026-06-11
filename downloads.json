@@ -2,11 +2,11 @@
   "product": "Mynah",
   "version": "1.0.0",
   "release": {
-    "number": 164,
-    "bundleVersion": "164",
-    "buildSignature": "1.0.0+r151.f4a56650fd7f",
-    "builtAtIso": "2026-06-09T13:24:31.613Z",
-    "gitCommit": "f4a56650fd7f"
+    "number": 174,
+    "bundleVersion": "174",
+    "buildSignature": "1.0.0+r174.bb57f81925eb",
+    "builtAtIso": "2026-06-11T09:52:04.419Z",
+    "gitCommit": "bb57f81925eb"
   },
   "pricing": {
     "usd": 29,
@@ -17,16 +17,62 @@
     {
       "platform": "macos",
       "arch": "aarch64",
-      "label": "Apple Silicon",
-      "filename": "Mynah_1.0.0_aarch64.dmg",
-      "url": "https://mynah.site/public/Mynah_1.0.0_aarch64.dmg",
+      "type": "Trial",
+      "label": "Trial (Apple Silicon)",
+      "filename": "Mynah_Trial_1.0.0_b174_macos_aarch64.dmg",
+      "url": "https://mynah.site/public/Mynah_Trial_1.0.0_b174_macos_aarch64.dmg",
       "size_mb": 15,
-      "sha256": "09bca1bf7e4bff3f23e0919fceafb7955643413e3a577c8e346038eeae8d9694",
+      "sha256": "91a420426022a1572f6bbe1784719eebc035f5686a91b2c81dae81bed137718d",
       "min_os": "10.15",
       "notarized": true,
       "stapled": true,
       "signedBy": "Developer ID Application: Khalid Irfan (99YAK7YU3M)",
-      "notes": "Apple Silicon. Signed with Developer ID, notarized by Apple, and stapled for Gatekeeper validation."
+      "notes": "Trial 60-Day Free Trial. Signed with Developer ID, notarized by Apple, and stapled."
+    },
+    {
+      "platform": "macos",
+      "arch": "aarch64",
+      "type": "Lifetime",
+      "label": "Lifetime (Apple Silicon)",
+      "filename": "Mynah_Lifetime_1.0.0_b174_macos_aarch64.dmg",
+      "url": "https://mynah.site/public/Mynah_Lifetime_1.0.0_b174_macos_aarch64.dmg",
+      "size_mb": 15,
+      "sha256": "2deb2b954981077c654cc468660f7b85de391a0f664c72da1fee87f32bc62617",
+      "min_os": "10.15",
+      "notarized": true,
+      "stapled": true,
+      "signedBy": "Developer ID Application: Khalid Irfan (99YAK7YU3M)",
+      "notes": "Lifetime Lifetime Unrestricted. Signed with Developer ID, notarized by Apple, and stapled."
+    },
+    {
+      "platform": "macos",
+      "arch": "x86_64",
+      "type": "Trial",
+      "label": "Trial (Intel)",
+      "filename": "Mynah_Trial_1.0.0_b174_macos_x86_64.dmg",
+      "url": "https://mynah.site/public/Mynah_Trial_1.0.0_b174_macos_x86_64.dmg",
+      "size_mb": 17,
+      "sha256": "d8aad43f8921435998ca2478359a4ce288adcded2b0cc22e1fdc52f1a5e5686c",
+      "min_os": "10.15",
+      "notarized": true,
+      "stapled": true,
+      "signedBy": "Developer ID Application: Khalid Irfan (99YAK7YU3M)",
+      "notes": "Trial 60-Day Free Trial. Signed with Developer ID, notarized by Apple, and stapled."
+    },
+    {
+      "platform": "macos",
+      "arch": "x86_64",
+      "type": "Lifetime",
+      "label": "Lifetime (Intel)",
+      "filename": "Mynah_Lifetime_1.0.0_b174_macos_x86_64.dmg",
+      "url": "https://mynah.site/public/Mynah_Lifetime_1.0.0_b174_macos_x86_64.dmg",
+      "size_mb": 16,
+      "sha256": "54b110db2ef2aec05b389cea984b288e4456569cdc6dcf12b715b3c2f4038d48",
+      "min_os": "10.15",
+      "notarized": true,
+      "stapled": true,
+      "signedBy": "Developer ID Application: Khalid Irfan (99YAK7YU3M)",
+      "notes": "Lifetime Lifetime Unrestricted. Signed with Developer ID, notarized by Apple, and stapled."
     }
   ],
   "status": "released"
