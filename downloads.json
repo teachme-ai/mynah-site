@@ -9,9 +9,12 @@
     "gitCommit": "4b22a4809fcc"
   },
   "pricing": {
-    "usd": 29,
-    "inr": 1499,
-    "model": "one-time lifetime license"
+    "lifetimeReferenceUsd": 29,
+    "lifetimeReferenceInr": 1499,
+    "trialDays": 60,
+    "trialPurchasePercentOfLifetimePrice": 60,
+    "model": "60-day free trial with lifetime purchase offer",
+    "notes": "Try Mynah free for 60 days. If you love it, purchase before the trial ends for 60% of the lifetime price."
   },
   "artifacts": [
     {
