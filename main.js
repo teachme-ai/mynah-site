@@ -50,6 +50,10 @@ document.addEventListener('DOMContentLoaded', () => {
     notes: {
       raw: 'remember the website needs the privacy route visual the workflow tabs and a clearer download page',
       pasted: 'remember the website needs the privacy route visual the workflow tabs and a clearer download page'
+    },
+    browser: {
+      raw: 'search for the notarization checklist and paste the steps into this support article',
+      pasted: 'search for the notarization checklist and paste the steps into this support article'
     }
   };
 

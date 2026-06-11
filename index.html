@@ -121,18 +121,21 @@
         <p>Mynah is designed for the moment you are already writing, not for uploading files or managing a cloud account.</p>
       </div>
       <div class="step-grid">
-        <article class="step-card">
+        <article class="step-card action-card action-card-fn">
           <span class="step-number">01</span>
+          <div class="step-action-visual" aria-hidden="true"><span>fn</span></div>
           <h3>Hold Fn</h3>
           <p>Start dictation with the native Mac Fn key. Mynah can stay quietly in the menu bar.</p>
         </article>
-        <article class="step-card">
+        <article class="step-card action-card action-card-wave">
           <span class="step-number">02</span>
+          <div class="step-action-visual step-wave" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
           <h3>Speak naturally</h3>
           <p>Say the words you want to place into the current app. Mynah handles local transcription on this Mac.</p>
         </article>
-        <article class="step-card">
+        <article class="step-card action-card action-card-paste">
           <span class="step-number">03</span>
+          <div class="step-action-visual step-cursor" aria-hidden="true"><span></span></div>
           <h3>Release to paste</h3>
           <p>Your transcript lands in the app you were already using: Mail, Notes, chat, editors, or AI prompts.</p>
         </article>
@@ -142,14 +145,15 @@
     <section class="section workflow-section">
       <div class="section-heading">
         <p class="eyebrow">Use it everywhere you type</p>
-        <h2>Same gesture. Different kinds of writing.</h2>
-        <p>Mynah focuses on faithful local dictation: messages, notes, prompts, and replies in the app you already have open.</p>
+        <h2>One gesture. Any active cursor.</h2>
+        <p>Mynah does not ask you to move into a writing dashboard. It listens locally and places faithful text into the app you were already using.</p>
       </div>
       <div class="workflow-tabs" role="tablist" aria-label="Mynah workflow examples">
         <button class="workflow-tab active" type="button" data-workflow="email">Email</button>
         <button class="workflow-tab" type="button" data-workflow="chat">Chat</button>
         <button class="workflow-tab" type="button" data-workflow="prompt">AI prompt</button>
         <button class="workflow-tab" type="button" data-workflow="notes">Notes</button>
+        <button class="workflow-tab" type="button" data-workflow="browser">Browser</button>
       </div>
       <div class="workflow-card" data-workflow-card>
         <div>
@@ -160,6 +164,24 @@
           <span class="demo-label">Mynah pastes</span>
           <p data-workflow-pasted>tell the team i checked the accessibility flow and the app now opens as a proper Mac settings window</p>
         </div>
+      </div>
+    </section>
+
+    <section class="section screenshot-section">
+      <div class="section-heading">
+        <p class="eyebrow">Actual app</p>
+        <h2>A small Mac window that gets out of the way.</h2>
+        <p>The main surface is intentionally compact: status, local model, paste behavior, and your recent captures when you ask for them.</p>
+      </div>
+      <div class="screenshot-showcase screenshot-showcase-offset">
+        <figure class="app-shot app-shot-primary">
+          <img src="/public/screenshots/app-home-light.png" alt="Mynah main window in light theme showing the Fn dictation control." loading="lazy" />
+          <figcaption>Ready state</figcaption>
+        </figure>
+        <figure class="app-shot app-shot-secondary">
+          <img src="/public/screenshots/app-captures.png" alt="Mynah main window with the captures drawer expanded." loading="lazy" />
+          <figcaption>Recent captures when needed</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -175,11 +197,11 @@
       <div class="privacy-map" aria-label="Mynah privacy route">
         <div class="privacy-path privacy-path-cloud">
           <strong>Cloud dictation</strong>
-          <span>Mic</span><span>Internet</span><span>Remote servers</span><span>Account</span><span>Text</span>
+          <span>Mic</span><i></i><span>Internet</span><i></i><span>Remote servers</span><i></i><span>Account</span><i></i><span>Text</span>
         </div>
         <div class="privacy-path privacy-path-local">
           <strong>Mynah</strong>
-          <span>Mic</span><span>Local model</span><span>Your Mac</span><span>Active cursor</span>
+          <span>Mic</span><i></i><span>Local model</span><i></i><span>Your Mac</span><i></i><span>Active cursor</span>
         </div>
       </div>
     </section>
@@ -190,31 +212,57 @@
         <h2>A quiet utility, not another noisy AI dashboard.</h2>
       </div>
       <div class="mac-product-grid">
-        <div class="mac-preview-card">
-          <div class="demo-titlebar">
-            <span></span><span></span><span></span>
-            <strong>Settings</strong>
-          </div>
-          <div class="settings-preview">
-            <aside>
-              <span class="active">General</span>
-              <span>Dictation</span>
-              <span>Models</span>
-              <span>Privacy</span>
-            </aside>
-            <main>
-              <div><strong>Dictation trigger</strong><span>Fn key</span></div>
-              <div><strong>Paste at cursor</strong><span>On</span></div>
-              <div><strong>Appearance</strong><span>Mynah Blue</span></div>
-            </main>
-          </div>
-        </div>
+        <figure class="app-shot settings-shot">
+          <img src="/public/screenshots/settings-general.png" alt="Mynah settings window showing General, Dictation, Models, Keyboard, Sound, Captures, Privacy and About sections." loading="lazy" />
+          <figcaption>Real macOS-style settings surface</figcaption>
+        </figure>
         <div class="feature-grid feature-grid-compact">
           <article><h3>Menu-bar runtime</h3><p>Available from the menu bar, even when the main window is hidden.</p></article>
           <article><h3>Fn-first dictation</h3><p>Hold, speak, release. A daily Mac reflex instead of a mode switch.</p></article>
           <article><h3>Clipboard-respectful paste</h3><p>Choose how Mynah handles existing clipboard text.</p></article>
           <article><h3>Local model control</h3><p>Use local transcription engines and model files, including whisper.cpp.</p></article>
         </div>
+      </div>
+    </section>
+
+    <section class="section screenshot-section">
+      <div class="section-heading">
+        <p class="eyebrow">Local models</p>
+        <h2>Pick the local Whisper model that fits the Mac.</h2>
+        <p>Fast, balanced, or better quality. Models are downloaded once and stored locally for private offline transcription.</p>
+      </div>
+      <div class="split-section model-proof">
+        <figure class="app-shot">
+          <img src="/public/screenshots/settings-models.png" alt="Mynah model settings showing Fast, Balanced, and Better local Whisper model options." loading="lazy" />
+          <figcaption>Model control inside Settings</figcaption>
+        </figure>
+        <div class="proof-grid proof-grid-stacked">
+          <article><strong>Fast model</strong><span>Small download, quickest response on older Macs.</span></article>
+          <article><strong>Balanced model</strong><span>The recommended everyday setting for accuracy and speed.</span></article>
+          <article><strong>Better model</strong><span>Higher quality when the Mac has the headroom.</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section themes-section">
+      <div class="section-heading">
+        <p class="eyebrow">Appearance</p>
+        <h2>Three moods, same quiet workflow.</h2>
+        <p>Mynah can feel bright, neutral, or dark without changing the core voice-to-cursor behavior.</p>
+      </div>
+      <div class="theme-strip">
+        <figure class="app-shot theme-shot">
+          <img src="/public/screenshots/app-home-blue.png" alt="Mynah main window in blue theme." loading="lazy" />
+          <figcaption>Mynah Blue</figcaption>
+        </figure>
+        <figure class="app-shot theme-shot">
+          <img src="/public/screenshots/app-home-light.png" alt="Mynah main window in light theme." loading="lazy" />
+          <figcaption>Light</figcaption>
+        </figure>
+        <figure class="app-shot theme-shot">
+          <img src="/public/screenshots/app-home-dark.png" alt="Mynah main window in dark theme." loading="lazy" />
+          <figcaption>Dark</figcaption>
+        </figure>
       </div>
     </section>
 
