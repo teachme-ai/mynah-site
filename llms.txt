@@ -24,7 +24,8 @@
 - Account requirement: none for core dictation
 - Cloud requirement: none for core dictation
 - Pricing model: 60-day free trial with lifetime purchase offer
-- Trial offer: try Mynah free for 60 days; if you love it, purchase before the trial ends for 60% of the lifetime price
+- Standard lifetime license fee: $29 USD
+- Trial offer: try Mynah free for 60 days; if you love it, purchase before the trial ends for 60% of the $29 lifetime price
 - Release number: 177
 - Build signature: 1.0.0+r177.4b22a4809fcc
 - Apple Silicon DMG URL: https://mynah.site/public/Mynah_Trial_1.0.0_b177_macos_aarch64.dmg
