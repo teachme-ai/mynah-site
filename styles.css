@@ -1643,8 +1643,12 @@ body.menu-open {
   }
 
   .hero {
-    padding-top: 56px;
+    padding-top: 110px;
     min-height: auto;
+  }
+
+  .section {
+    padding-top: 110px;
   }
 
   .hero-card {
