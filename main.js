@@ -296,7 +296,7 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         </div>
         <div class="menubar-item app-name">
-          <span>Mynah</span>
+          <img src="/public/mynah_icon_highres.png" alt="Mynah" class="menubar-mynah-icon" />
           <div class="menubar-dropdown" style="left: 0; right: auto;">
             <div class="dropdown-item"><span>About Mynah</span></div>
             <div class="dropdown-divider"></div>
