@@ -644,6 +644,9 @@ document.addEventListener('DOMContentLoaded', () => {
       editorStatusText.style.color = '#ef6351';
     }
 
+    const statusDot = document.querySelector('.editor-status-dot');
+    if (statusDot) statusDot.classList.add('recording');
+
     // Update Menubar Status Dot to recording
     const mbDot = document.getElementById('menubar-status-dot');
     const mbText = document.getElementById('menubar-status-text');
@@ -671,6 +674,9 @@ document.addEventListener('DOMContentLoaded', () => {
       editorStatusText.textContent = '🧠 Local Whisper Model transcribing (0.2s)...';
       editorStatusText.style.color = 'var(--mynah-blue)';
     }
+
+    const statusDot = document.querySelector('.editor-status-dot');
+    if (statusDot) statusDot.classList.remove('recording');
 
     // Reset Menubar Status Dot
     const mbDot = document.getElementById('menubar-status-dot');
