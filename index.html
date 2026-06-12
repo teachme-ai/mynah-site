@@ -259,6 +259,48 @@
       </div>
     </section>
 
+    <section class="section capabilities-section" id="capabilities">
+      <div class="section-heading">
+        <p class="eyebrow">Product Roadmap</p>
+        <h2>Current Capabilities &amp; Next Releases</h2>
+        <p>Mynah is built for local control, tuning capabilities specifically for the macOS ecosystem.</p>
+      </div>
+      <div class="capabilities-grid">
+        <div class="capability-col">
+          <p class="eyebrow">Current Capabilities</p>
+          <h3>Powering your dictation today</h3>
+          <p class="capability-intro">
+            Mynah already gives you local Mac voice typing: hold Fn, speak, release, and paste into the app you are using. Transcription runs on local engines, diagnostics stay on-device, and no account or cloud transcription provider is required.
+          </p>
+          <ul class="capability-list">
+            <li><strong>Fn-key dictation:</strong> Hold, speak, and release to dictate immediately.</li>
+            <li><strong>Local transcription:</strong> Runs on-device using private transcription models.</li>
+            <li><strong>Auto-paste at cursor:</strong> Drops your words instantly in the active app.</li>
+            <li><strong>Menu-bar runtime:</strong> Stays out of sight, always ready in the background.</li>
+            <li><strong>Local captures:</strong> Quick access to previous audio clips and transcripts.</li>
+            <li><strong>Local diagnostics:</strong> Keep execution logs secure on your own hardware.</li>
+            <li><strong>Mac permission guidance:</strong> Native guides to set up permissions reliably.</li>
+          </ul>
+        </div>
+        <div class="capability-col roadmap-col">
+          <p class="eyebrow">Coming Next</p>
+          <h3>Local Writing Modes</h3>
+          <p class="capability-intro">
+            The next major Mynah release adds local writing modes. Dictate stays verbatim, while Clean Ramble, List, and Prompt help shape spoken thoughts before paste. On supported Macs, Apple’s on-device models may enhance results automatically. When unavailable, Mynah falls back to deterministic local rules.
+          </p>
+          <ul class="capability-list">
+            <li><strong>Dictate:</strong> exactly what you said</li>
+            <li><strong>Clean Ramble:</strong> cleaner sentences from messy speech</li>
+            <li><strong>List:</strong> bullets and numbered steps</li>
+            <li><strong>Prompt:</strong> structured prompts from rough thoughts</li>
+            <li><strong>Apple on-device enhancement:</strong> where available on supported Macs</li>
+            <li><strong>Deterministic fallback:</strong> everywhere when Apple Intelligence is unavailable</li>
+            <li><strong>Raw transcript:</strong> remains the saved record in local captures</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <section class="section pricing-section" id="pricing">
       <div class="pricing-card">
         <p class="eyebrow">60-day trial offer</p>
@@ -333,8 +375,11 @@
         <details open><summary>How does the trial work?</summary><p>Mynah includes a fully-featured 60-day trial. Use it first; if you love it, purchase before your 60 days are over and keep the app with a lifetime license at 60% of the $29 lifetime price.</p></details>
         <details><summary>Is Mynah a subscription?</summary><p>No. Mynah is not a subscription. The goal is simple: try it free, then buy the lifetime license during your trial if it becomes useful.</p></details>
         <details name="home-faq"><summary>Is Mynah from the Apple App Store?</summary><p>No. Mynah is distributed directly from mynah.site. macOS may ask you to approve it on first launch — this is expected for independently distributed apps.</p></details>
-        <details name="home-faq"><summary>Does Mynah rewrite or polish my speech?</summary><p>No. Mynah is currently focused on faithful local transcription and cursor paste. Advanced local text rules may exist for power users, but rewriting is not the core promise.</p></details>
-        <details name="home-faq"><summary>Does Mynah need cloud transcription?</summary><p>No cloud service is required for the core local dictation loop. Mynah uses local engines such as whisper.cpp running on your Mac.</p></details>
+        <details name="home-faq"><summary>Does Mynah use cloud transcription?</summary><p>No. The core dictation loop runs 100% locally on your Mac. Audio and transcription are processed on-device using engines like whisper.cpp. No cloud transcription or account is required.</p></details>
+        <details name="home-faq"><summary>Will the new writing modes send my text to the cloud?</summary><p>No. The upcoming writing modes process your speech and shape text entirely on your device. On supported Macs, they run using Apple's on-device models, falling back to deterministic local rules when unavailable. Your voice and text remain private.</p></details>
+        <details name="home-faq"><summary>What happens on Intel Macs?</summary><p>Mynah's core dictation runs beautifully on Intel Macs using whisper.cpp. When writing modes are released, Intel Macs will use deterministic local rules to shape text without on-device Apple intelligence models, keeping the features functional and private.</p></details>
+        <details name="home-faq"><summary>Will Mynah rewrite everything I say?</summary><p>Only when you want it to. By default, Dictate mode is verbatim. If you select Clean Ramble, List, or Prompt, Mynah shapes your messy thoughts before pasting them. You always control the active mode.</p></details>
+        <details name="home-faq"><summary>Does Mynah store the rewritten version?</summary><p>No. Mynah stores the raw transcript in your local captures list for your own reference, but the shaped/rewritten text is pasted directly at your cursor and is not saved to Mynah's database.</p></details>
         <details name="home-faq"><summary>Why does Mynah need Accessibility?</summary><p>macOS requires Accessibility permission for Mynah to place text into the active app at your cursor.</p></details>
         <details name="home-faq"><summary>Does Mynah work when the window is closed?</summary><p>Yes. Mynah is designed as a menu-bar utility. Closing the window does not quit the app — the icon stays in the menu bar and Fn keeps working.</p></details>
         <details name="home-faq"><summary>I used SpeakPaste before. Do I need to approve Mynah again?</summary><p>Yes. Mynah is a new app identity. Remove old SpeakPaste entries from Accessibility in System Settings and approve Mynah fresh.</p></details>
