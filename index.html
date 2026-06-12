@@ -119,6 +119,137 @@
           <p>Your transcript lands in the app you were already using: Mail, Notes, chat, editors, or AI prompts.</p>
         </article>
       </div>
+
+      <!-- Interactive Keyboard Dictation Simulator -->
+      <div class="dictation-simulator-card">
+        <div class="section-heading" style="margin-bottom: 1rem;">
+          <p class="eyebrow" style="margin-bottom: 0.25rem;">Interactive Simulator</p>
+          <h3 style="font-size: 1.6rem; margin-bottom: 0.5rem; letter-spacing: -0.04em;">Try Fn key dictation locally.</h3>
+          <p style="font-size: 0.95rem; margin-bottom: 0; color: var(--muted);">Click and hold the virtual <strong>fn</strong> key button below (or press and hold the physical <strong>Fn</strong> key on your Mac keyboard) to speak. Release it to auto-paste the transcription.</p>
+        </div>
+
+        <div class="mock-editor-window macos-window">
+          <div class="window-titlebar">
+            <div class="window-dots">
+              <span class="dot-red" title="Close"></span>
+              <span class="dot-yellow" title="Minimize"></span>
+              <span class="dot-green" title="Zoom"></span>
+            </div>
+            <div class="window-title">📝 Note.txt — Mynah Dictation Canvas</div>
+          </div>
+          <div class="mock-editor-body">
+            <textarea class="editor-textarea" id="mock-textarea" placeholder="Click here, then hold the Fn key to start dictating..."></textarea>
+            <div class="editor-status" id="editor-status">
+              <span class="status-text-muted" id="editor-status-text">Ready. Cursor active.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="simulator-controls">
+          <div class="sim-visualizer-box">
+            <div class="sim-mic-icon" id="sim-mic-icon">🎤</div>
+            <div class="sim-waveforms" id="sim-waveforms">
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="sim-status" id="sim-status">Idle</div>
+          </div>
+          
+          <div class="sim-keyboard">
+            <div class="kbd-row">
+              <button class="key-btn key-esc">esc</button>
+              <button class="key-btn key-f">F1</button>
+              <button class="key-btn key-f">F2</button>
+              <button class="key-btn key-f">F3</button>
+              <button class="key-btn">F4</button>
+              <button class="key-btn">F5</button>
+              <button class="key-btn">F6</button>
+              <button class="key-btn">F7</button>
+              <button class="key-btn">F8</button>
+              <button class="key-btn">F9</button>
+              <button class="key-btn">F10</button>
+              <button class="key-btn">F11</button>
+              <button class="key-btn">F12</button>
+            </div>
+            <div class="kbd-row">
+              <button class="key-btn">~</button>
+              <button class="key-btn">1</button>
+              <button class="key-btn">2</button>
+              <button class="key-btn">3</button>
+              <button class="key-btn">4</button>
+              <button class="key-btn">5</button>
+              <button class="key-btn">6</button>
+              <button class="key-btn">7</button>
+              <button class="key-btn">8</button>
+              <button class="key-btn">9</button>
+              <button class="key-btn">0</button>
+              <button class="key-btn">-</button>
+              <button class="key-btn">=</button>
+              <button class="key-btn key-delete">delete</button>
+            </div>
+            <div class="kbd-row">
+              <button class="key-btn key-tab">tab</button>
+              <button class="key-btn">Q</button>
+              <button class="key-btn">W</button>
+              <button class="key-btn">E</button>
+              <button class="key-btn">R</button>
+              <button class="key-btn">T</button>
+              <button class="key-btn">Y</button>
+              <button class="key-btn">U</button>
+              <button class="key-btn">I</button>
+              <button class="key-btn">O</button>
+              <button class="key-btn">P</button>
+              <button class="key-btn">[</button>
+              <button class="key-btn">]</button>
+              <button class="key-btn key-slash">\</button>
+            </div>
+            <div class="kbd-row">
+              <button class="key-btn key-caps">caps lock</button>
+              <button class="key-btn">A</button>
+              <button class="key-btn">S</button>
+              <button class="key-btn">D</button>
+              <button class="key-btn">F</button>
+              <button class="key-btn">G</button>
+              <button class="key-btn">H</button>
+              <button class="key-btn">J</button>
+              <button class="key-btn">K</button>
+              <button class="key-btn">L</button>
+              <button class="key-btn">;</button>
+              <button class="key-btn">'</button>
+              <button class="key-btn key-return">return</button>
+            </div>
+            <div class="kbd-row">
+              <button class="key-btn key-lshift">shift</button>
+              <button class="key-btn">Z</button>
+              <button class="key-btn">X</button>
+              <button class="key-btn">C</button>
+              <button class="key-btn">V</button>
+              <button class="key-btn">B</button>
+              <button class="key-btn">N</button>
+              <button class="key-btn">M</button>
+              <button class="key-btn">,</button>
+              <button class="key-btn">.</button>
+              <button class="key-btn">/</button>
+              <button class="key-btn key-rshift">shift</button>
+            </div>
+            <div class="kbd-row">
+              <button class="key-btn key-fn highlighted" id="virtual-fn-key" title="Click & Hold to speak">fn</button>
+              <button class="key-btn key-ctrl">control</button>
+              <button class="key-btn key-option">option</button>
+              <button class="key-btn key-cmd">command</button>
+              <button class="key-btn key-space">space</button>
+              <button class="key-btn key-cmd">command</button>
+              <button class="key-btn key-option">option</button>
+              <button class="key-arrow-box" style="font-size:7px; display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                <span class="arrow-up">▲</span>
+                <span class="arrow-down-left">◀ ▼ ▶</span>
+              </button>
+            </div>
+          </div>
+          <div class="simulator-help-text">
+            <span>💡 <strong>Tip:</strong> Press and hold the physical <strong>Fn</strong> key on your keyboard or hold the <strong>fn button</strong> above.</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="section workflow-section">
