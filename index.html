@@ -173,14 +173,65 @@
           Mynah is built for the opposite feeling: speak privately, process locally, paste deliberately.
         </p>
       </div>
-      <div class="privacy-map" aria-label="Mynah privacy route">
-        <div class="privacy-path privacy-path-cloud">
-          <strong>Cloud dictation</strong>
-          <span>Mic</span><i></i><span>Internet</span><i></i><span>Remote servers</span><i></i><span>Account</span><i></i><span>Text</span>
+      <div class="privacy-timeline-container">
+        <div class="privacy-toggle-bar" role="tablist" aria-label="Privacy path selector">
+          <button class="privacy-toggle-btn" type="button" data-path="cloud" role="tab" aria-selected="false">Cloud Dictation</button>
+          <button class="privacy-toggle-btn active" type="button" data-path="mynah" role="tab" aria-selected="true">Mynah</button>
         </div>
-        <div class="privacy-path privacy-path-local">
-          <strong>Mynah</strong>
-          <span>Mic</span><i></i><span>Local model</span><i></i><span>Your Mac</span><i></i><span>Active cursor</span>
+        <div class="privacy-map" aria-label="Mynah privacy route" style="box-shadow: none; border: none; background: transparent; padding: 0; overflow: visible;">
+          <!-- Cloud Dictation Path -->
+          <div class="privacy-path privacy-path-cloud hidden" id="path-cloud">
+            <div class="path-steps">
+              <div class="path-step">
+                <div class="step-dot">🎤</div>
+                <span>Mic</span>
+              </div>
+              <div class="path-connector"></div>
+              <div class="path-step alert-step">
+                <div class="step-dot">☁️</div>
+                <span>Internet</span>
+              </div>
+              <div class="path-connector"></div>
+              <div class="path-step alert-step">
+                <div class="step-dot">🖥️</div>
+                <span>Remote servers</span>
+              </div>
+              <div class="path-connector"></div>
+              <div class="path-step alert-step">
+                <div class="step-dot">👤</div>
+                <span>Account</span>
+              </div>
+              <div class="path-connector"></div>
+              <div class="path-step">
+                <div class="step-dot">📝</div>
+                <span>Text</span>
+              </div>
+            </div>
+          </div>
+          <!-- Mynah Path -->
+          <div class="privacy-path privacy-path-local" id="path-mynah">
+            <div class="path-steps">
+              <div class="path-step">
+                <div class="step-dot">🎤</div>
+                <span>Mic</span>
+              </div>
+              <div class="path-connector active-connector"></div>
+              <div class="path-step secure-step">
+                <div class="step-dot">🧠</div>
+                <span>Local model</span>
+              </div>
+              <div class="path-connector active-connector"></div>
+              <div class="path-step secure-step">
+                <div class="step-dot">💻</div>
+                <span>Your Mac</span>
+              </div>
+              <div class="path-connector active-connector"></div>
+              <div class="path-step secure-step">
+                <div class="step-dot">📍</div>
+                <span>Active cursor</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -204,46 +255,7 @@
       </div>
     </section>
 
-    <section class="section screenshot-section">
-      <div class="section-heading">
-        <p class="eyebrow">Local models</p>
-        <h2>Pick the local Whisper model that fits the Mac.</h2>
-        <p>Fast, balanced, or better quality. Models are downloaded once and stored locally for private offline transcription.</p>
-      </div>
-      <div class="split-section model-proof">
-        <figure class="app-shot">
-          <img src="/public/screenshots/settings-models.png" alt="Mynah model settings showing Fast, Balanced, and Better local Whisper model options." loading="lazy" />
-          <figcaption>Model control inside Settings</figcaption>
-        </figure>
-        <div class="proof-grid proof-grid-stacked">
-          <article><strong>Fast model</strong><span>Small download, quickest response on older Macs.</span></article>
-          <article><strong>Balanced model</strong><span>The recommended everyday setting for accuracy and speed.</span></article>
-          <article><strong>Better model</strong><span>Higher quality when the Mac has the headroom.</span></article>
-        </div>
-      </div>
-    </section>
 
-    <section class="section themes-section">
-      <div class="section-heading">
-        <p class="eyebrow">Appearance</p>
-        <h2>Three moods, same quiet workflow.</h2>
-        <p>Mynah can feel bright, neutral, or dark without changing the core voice-to-cursor behavior.</p>
-      </div>
-      <div class="theme-strip">
-        <figure class="app-shot theme-shot">
-          <img src="/public/screenshots/app-home-blue.png" alt="Mynah main window in blue theme." loading="lazy" />
-          <figcaption>Mynah Blue</figcaption>
-        </figure>
-        <figure class="app-shot theme-shot">
-          <img src="/public/screenshots/app-home-light.png" alt="Mynah main window in light theme." loading="lazy" />
-          <figcaption>Light</figcaption>
-        </figure>
-        <figure class="app-shot theme-shot">
-          <img src="/public/screenshots/app-home-dark.png" alt="Mynah main window in dark theme." loading="lazy" />
-          <figcaption>Dark</figcaption>
-        </figure>
-      </div>
-    </section>
 
     <section class="section proof-section">
       <div class="section-heading">
@@ -329,42 +341,7 @@
       </div>
     </section>
 
-    <section class="section compare-preview">
-      <div class="section-heading">
-        <p class="eyebrow">Why Mynah</p>
-        <h2>Why Mynah instead of another dictation app?</h2>
-        <p>Mynah is built for people who want private voice typing on a Mac, not another cloud subscription or a file transcription workstation.</p>
-      </div>
-      <div class="decision-table-wrap">
-        <table class="decision-table" role="table" aria-label="Mynah vs competitors quick comparison">
-          <thead>
-            <tr>
-              <th>What matters</th>
-              <th class="mynah-column">Mynah</th>
-              <th>Wispr Flow</th>
-              <th>Superwhisper</th>
-              <th>MacWhisper</th>
-              <th>Apple Dictation</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>Lifetime purchase path</td><td class="mynah-column">✅ 60 days free, then 60% of the $29 lifetime price during trial</td><td>❌ subscription-led</td><td>⚠️ expensive lifetime ($149+)</td><td>✅ €39 one-time Pro</td><td>✅ free built-in</td></tr>
-            <tr><td>No strict word quotas/limits</td><td class="mynah-column">✅ unlimited usage</td><td>❌ restricted free limit (2k words)</td><td>⚠️ daily token limits</td><td>⚠️ restricted free models</td><td>✅ unlimited basic</td></tr>
-            <tr><td>macOS version compatibility updates</td><td class="mynah-column">✅ included</td><td>⚠️ active subscription required</td><td>⚠️ active subscription required</td><td>⚠️ Pro-only updates</td><td>✅ system updates</td></tr>
-            <tr><td>Voice data sovereignty (100% local)</td><td class="mynah-column">✅ zero cloud</td><td>❌ cloud-first servers</td><td>⚠️ local config available</td><td>✅ local processing</td><td>⚠️ Apple cloud servers</td></tr>
-            <tr><td>Cursor-focused workflow</td><td class="mynah-column">✅ Hold Fn to paste</td><td>✅ hotkey / inline</td><td>✅ hotkey / inline</td><td>❌ file/meeting workstation</td><td>⚠️ basic fallback</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="comparison-legend">
-        <span>✅ clear strength</span>
-        <span>⚠️ partial / plan-dependent</span>
-        <span>❌ not the product model</span>
-        <span>? not verified from public info</span>
-      </div>
-      <p class="fine-print">Competitor features and pricing change frequently. This table is based on public product positioning and is not a performance benchmark.</p>
-      <a class="text-link" href="/compare/">Full comparison with position cards →</a>
-    </section>
+
 
     <section class="section faq-section">
       <div class="section-heading">
@@ -373,17 +350,11 @@
       </div>
       <div class="faq-grid">
         <details open><summary>How does the trial work?</summary><p>Mynah includes a fully-featured 60-day trial. Use it first; if you love it, purchase before your 60 days are over and keep the app with a lifetime license at 60% of the $29 lifetime price.</p></details>
+        <details><summary>Does Mynah use cloud transcription?</summary><p>No. The core dictation loop runs 100% locally on your Mac. Audio and transcription are processed on-device using engines like whisper.cpp. No cloud transcription or account is required.</p></details>
         <details><summary>Is Mynah a subscription?</summary><p>No. Mynah is not a subscription. The goal is simple: try it free, then buy the lifetime license during your trial if it becomes useful.</p></details>
-        <details name="home-faq"><summary>Is Mynah from the Apple App Store?</summary><p>No. Mynah is distributed directly from mynah.site. macOS may ask you to approve it on first launch — this is expected for independently distributed apps.</p></details>
-        <details name="home-faq"><summary>Does Mynah use cloud transcription?</summary><p>No. The core dictation loop runs 100% locally on your Mac. Audio and transcription are processed on-device using engines like whisper.cpp. No cloud transcription or account is required.</p></details>
-        <details name="home-faq"><summary>Will the new writing modes send my text to the cloud?</summary><p>No. The upcoming writing modes process your speech and shape text entirely on your device. On supported Macs, they run using Apple's on-device models, falling back to deterministic local rules when unavailable. Your voice and text remain private.</p></details>
-        <details name="home-faq"><summary>What happens on Intel Macs?</summary><p>Mynah's core dictation runs beautifully on Intel Macs using whisper.cpp. When writing modes are released, Intel Macs will use deterministic local rules to shape text without on-device Apple intelligence models, keeping the features functional and private.</p></details>
-        <details name="home-faq"><summary>Will Mynah rewrite everything I say?</summary><p>Only when you want it to. By default, Dictate mode is verbatim. If you select Clean Ramble, List, or Prompt, Mynah shapes your messy thoughts before pasting them. You always control the active mode.</p></details>
-        <details name="home-faq"><summary>Does Mynah store the rewritten version?</summary><p>No. Mynah stores the raw transcript in your local captures list for your own reference, but the shaped/rewritten text is pasted directly at your cursor and is not saved to Mynah's database.</p></details>
-        <details name="home-faq"><summary>Why does Mynah need Accessibility?</summary><p>macOS requires Accessibility permission for Mynah to place text into the active app at your cursor.</p></details>
-        <details name="home-faq"><summary>Does Mynah work when the window is closed?</summary><p>Yes. Mynah is designed as a menu-bar utility. Closing the window does not quit the app — the icon stays in the menu bar and Fn keeps working.</p></details>
-        <details name="home-faq"><summary>I used SpeakPaste before. Do I need to approve Mynah again?</summary><p>Yes. Mynah is a new app identity. Remove old SpeakPaste entries from Accessibility in System Settings and approve Mynah fresh.</p></details>
-        <details name="home-faq"><summary>Accessibility looks enabled but Fn still doesn't work.</summary><p>macOS can hold a stale entry from an older build. Remove Mynah and SpeakPaste entries from Accessibility, add Mynah again from /Applications/Mynah.app, enable it, and restart Mynah. Restart the Mac if needed.</p></details>
+      </div>
+      <div style="margin-top: 2.5rem; text-align: center;">
+        <a class="text-link" href="/support/permissions/">View all FAQs and Troubleshooting →</a>
       </div>
     </section>
   </main>
