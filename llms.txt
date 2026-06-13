@@ -29,7 +29,7 @@
 - Release number: 177
 - Build signature: 1.0.0+r177.36fe3367d528.dirty
 - Apple Silicon DMG URL: https://mynah.site/public/Mynah_Trial_1.0.0_b177_macos_aarch64.dmg
-- SHA256: a768e1780aa49f963c89a672087e013ef661dd5ee499ecbc293da9c30aa427c7
+- SHA256: 5ae2f2059e945e331d1f77495fa64a055ab9baa5f1c6a22203ff531cb2bd234c
 - Notarized: yes
 - Stapled: yes
 - Signed by: Developer ID Application: Khalid Irfan (99YAK7YU3M)
