@@ -1,3 +1,23 @@
+(() => {
+  const host = window.location.hostname;
+  const isLocalhost = host === 'localhost' || host === '127.0.0.1' || host === '::1';
+  const isVercelHosted = host.endsWith('.vercel.app') || host === 'mynah.site' || host === 'www.mynah.site';
+
+  if (isLocalhost || !isVercelHosted || window.__mynahVercelAnalyticsLoaded) {
+    return;
+  }
+
+  window.__mynahVercelAnalyticsLoaded = true;
+  window.va = window.va || function () {
+    (window.vaq = window.vaq || []).push(arguments);
+  };
+
+  const script = document.createElement('script');
+  script.defer = true;
+  script.src = '/_vercel/insights/script.js';
+  document.head.appendChild(script);
+})();
+
 document.addEventListener('DOMContentLoaded', () => {
   // Smooth scroll with sticky header offset (100px)
   const offset = 100;
@@ -1098,4 +1118,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
   initQuickLook();
 });
-
