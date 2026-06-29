@@ -4,9 +4,9 @@
   "release": {
     "number": 178,
     "bundleVersion": "178",
-    "buildSignature": "1.0.0+r178.bead8980d7e5.dirty",
-    "builtAtIso": "2026-06-29T08:43:06.366Z",
-    "gitCommit": "bead8980d7e5"
+    "buildSignature": "1.0.0+r178.16e592cc92ef.dirty",
+    "builtAtIso": "2026-06-29T09:27:12.439Z",
+    "gitCommit": "16e592cc92ef"
   },
   "pricing": {
     "lifetimeReferenceUsd": 29,
@@ -25,7 +25,7 @@
       "filename": "Mynah_Trial_1.0.0_b178_macos_aarch64.dmg",
       "url": "https://mynah.site/public/Mynah_Trial_1.0.0_b178_macos_aarch64.dmg",
       "size_mb": 15,
-      "sha256": "231db4afdeb3d4387acc2e31cde2da97677f25c7df6684c28eecfd63decb6834",
+      "sha256": "01282f5dd5d80891a464a9fedb09f0f71b93fe539a963f6d7dbc0e740ee22fb8",
       "min_os": "10.15",
       "notarized": true,
       "stapled": true,
@@ -40,7 +40,7 @@
       "filename": "Mynah_Trial_1.0.0_b178_macos_x86_64.dmg",
       "url": "https://mynah.site/public/Mynah_Trial_1.0.0_b178_macos_x86_64.dmg",
       "size_mb": 16,
-      "sha256": "1911fc7b66cd62e778661611ddb40d0f99f2c2c540de2debb4ac38625818578b",
+      "sha256": "3381a3d67974a4dc43155d324f58d9bc3cd7bc442a1cfea94eaee3b7e642c843",
       "min_os": "10.15",
       "notarized": true,
       "stapled": true,

@@ -27,9 +27,9 @@
 - Standard lifetime license fee: $29 USD
 - Trial offer: try Mynah free for 60 days; if you love it, purchase before the trial ends for 60% of the $29 lifetime price
 - Release number: 178
-- Build signature: 1.0.0+r178.bead8980d7e5.dirty
+- Build signature: 1.0.0+r178.16e592cc92ef.dirty
 - Apple Silicon DMG URL: https://mynah.site/public/Mynah_Trial_1.0.0_b178_macos_aarch64.dmg
-- SHA256: 231db4afdeb3d4387acc2e31cde2da97677f25c7df6684c28eecfd63decb6834
+- SHA256: 01282f5dd5d80891a464a9fedb09f0f71b93fe539a963f6d7dbc0e740ee22fb8
 - Notarized: yes
 - Stapled: yes
 - Signed by: Developer ID Application: Khalid Irfan (99YAK7YU3M)
