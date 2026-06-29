@@ -5,7 +5,7 @@
     "number": 178,
     "bundleVersion": "178",
     "buildSignature": "1.0.0+r178.bead8980d7e5.dirty",
-    "builtAtIso": "2026-06-29T08:40:00.000Z",
+    "builtAtIso": "2026-06-29T08:43:06.366Z",
     "gitCommit": "bead8980d7e5"
   },
   "pricing": {
@@ -25,7 +25,7 @@
       "filename": "Mynah_Trial_1.0.0_b178_macos_aarch64.dmg",
       "url": "https://mynah.site/public/Mynah_Trial_1.0.0_b178_macos_aarch64.dmg",
       "size_mb": 15,
-      "sha256": "01e30ac7bdf476c58a049d3e49b3ac30496b1228da9059f2fcae1568fe347642",
+      "sha256": "231db4afdeb3d4387acc2e31cde2da97677f25c7df6684c28eecfd63decb6834",
       "min_os": "10.15",
       "notarized": true,
       "stapled": true,
@@ -39,8 +39,8 @@
       "label": "Trial (Intel)",
       "filename": "Mynah_Trial_1.0.0_b178_macos_x86_64.dmg",
       "url": "https://mynah.site/public/Mynah_Trial_1.0.0_b178_macos_x86_64.dmg",
-      "size_mb": 17,
-      "sha256": "8a6a5f4c1e4577cd85653e43f8ce18ca0c7d8b80e09b7f905a5be5240d20f2d9",
+      "size_mb": 16,
+      "sha256": "1911fc7b66cd62e778661611ddb40d0f99f2c2c540de2debb4ac38625818578b",
       "min_os": "10.15",
       "notarized": true,
       "stapled": true,
