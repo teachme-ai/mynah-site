@@ -34,7 +34,7 @@
 - Signed by: Developer ID Application: Khalid Irfan (99YAK7YU3M)
 - Release status: signed, notarized, stapled, and ready for direct download
 - Support: irfan@teachmeai.in
-- Primary technology: local speech transcription engines including whisper.cpp
+- Primary technology: high-performance native Rust core with lock-free audio streaming and whisper.cpp
 
 ## Do Not Claim
 

@@ -38,10 +38,11 @@
       "featureList": [
         "Hold Fn to dictate",
         "100% Free - No License Required",
+        "Super-Fast Native Rust Engine",
+        "Lock-Free Audio Ring-Buffer",
+        "App Nap Protected Background Runtime",
         "Local-first Mac dictation",
-        "Multilingual & Indic language dictation (Hindi, Kannada, Tamil, etc.)",
-        "Direct translation to English",
-        "Paste at active cursor",
+        "Instant paste at active cursor",
         "Menu-bar background runtime",
         "Clipboard behavior controls",
         "Local diagnostics"
@@ -70,10 +71,10 @@
     <section class="hero section hero-showcase">
       <div class="hero-copy">
         <p class="eyebrow">Private Mac dictation you own · 100% Free</p>
-        <h1>Local voice typing for your Mac.</h1>
+        <h1>Local voice typing for your Mac. Super fast.</h1>
         <p class="hero-subtitle">
-          Hold Fn, speak, release. <img src="/public/mynah_icon_highres.png" alt="Mynah" class="inline-brand-icon" /> transcribes locally on your Mac and pastes
-          wherever your cursor already is. 100% free software — no license key, no cloud transcription, and no monthly meter.
+          Hold Fn, speak, release. Powered by a high-performance native Rust core and whisper.cpp, <img src="/public/mynah_icon_highres.png" alt="Mynah" class="inline-brand-icon" /> transcribes locally on your Mac and pastes
+          wherever your cursor already is with near-instant speed. 100% free software — no license key, no cloud transcription, and no monthly meter.
         </p>
         <div class="hero-actions">
           <a class="button button-primary" href="/download/">Download Free for Mac</a>
@@ -82,9 +83,9 @@
         <ul class="trust-row" aria-label="Product highlights">
           <li>Version 1.0.0</li>
           <li>100% Free</li>
+          <li>Super-Fast Rust Engine</li>
+          <li>Zero Cloud Latency</li>
           <li>No License Needed</li>
-          <li>Local-first</li>
-          <li>Multilingual &amp; Indic</li>
           <li>Apple Silicon + Intel</li>
         </ul>
       </div>
@@ -380,10 +381,10 @@
           <figcaption>Real macOS-style settings surface</figcaption>
         </figure>
         <div class="feature-grid feature-grid-compact">
-          <article><h3>Menu-bar runtime</h3><p>Available from the menu bar, even when the main window is hidden.</p></article>
-          <article><h3>Fn-first dictation</h3><p>Hold, speak, release. A daily Mac reflex instead of a mode switch.</p></article>
-          <article><h3>Clipboard-respectful paste</h3><p>Choose how Mynah handles existing clipboard text.</p></article>
-          <article><h3>Local model control</h3><p>Use local transcription engines and model files, including whisper.cpp.</p></article>
+          <article><h3>Super-fast Rust engine</h3><p>Lock-free ring buffer streams audio directly to whisper.cpp worker threads for instant results.</p></article>
+          <article><h3>App Nap protected</h3><p>Never throttled by macOS in the background. Ready to transcribe the moment you press Fn.</p></article>
+          <article><h3>Fn-first dictation</h3><p>Hold, speak, release. A daily Mac reflex instead of a slow mode switch.</p></article>
+          <article><h3>Clipboard-respectful paste</h3><p>Pastes transcribed text directly at your cursor without wiping your existing clipboard.</p></article>
         </div>
       </div>
     </section>
@@ -415,16 +416,16 @@
           <p class="eyebrow">Current Capabilities</p>
           <h3>Powering your dictation today</h3>
           <p class="capability-intro">
-            Mynah already gives you local Mac voice typing: hold Fn, speak, release, and paste into the app you are using. Transcription runs on local engines, diagnostics stay on-device, and no account or cloud transcription provider is required.
+            Mynah already gives you ultra-fast local Mac voice typing: hold Fn, speak, release, and paste into the app you are using. Powered by a native Rust engine, transcription runs on local engines, diagnostics stay on-device, and no cloud provider is required.
           </p>
           <ul class="capability-list">
+            <li><strong>Super-fast Rust engine:</strong> Lock-free ring buffer streams audio straight into local whisper.cpp threads.</li>
+            <li><strong>App Nap protected:</strong> Prevents background throttling on macOS for zero latency spikes.</li>
             <li><strong>Fn-key dictation:</strong> Hold, speak, and release to dictate immediately.</li>
-            <li><strong>Local transcription:</strong> Runs on-device using private transcription models.</li>
+            <li><strong>Zero cloud latency:</strong> Runs 100% on-device using private transcription models.</li>
             <li><strong>Auto-paste at cursor:</strong> Drops your words instantly in the active app.</li>
             <li><strong>Menu-bar runtime:</strong> Stays out of sight, always ready in the background.</li>
-            <li><strong>Local captures:</strong> Quick access to previous audio clips and transcripts.</li>
-            <li><strong>Local diagnostics:</strong> Keep execution logs secure on your own hardware.</li>
-            <li><strong>Mac permission guidance:</strong> Native guides to set up permissions reliably.</li>
+            <li><strong>Local captures &amp; diagnostics:</strong> Keep execution logs and clips secure on your own hardware.</li>
           </ul>
         </div>
         <div class="capability-col roadmap-col">
@@ -454,9 +455,10 @@
           Mynah is completely free for everyone. No license key, no trial expiration, no accounts, and no monthly credit meter. Download it, install your favorite local Whisper model, and dictate without limits.
         </p>
         <div class="price-primary"><span class="price-amount price-amount-gold">$0</span><span class="price-label">Free &amp; Unrestricted · No license needed</span></div>
-        <div class="lifetime-price-note"><strong>100%</strong><span>private, on-device voice typing</span></div>
-        <div class="price-india"><span class="price-india-badge">Multilingual</span><span class="price-india-amount">English, Hindi, Kannada, Tamil &amp; more</span></div>
+        <div class="lifetime-price-note"><strong>Rust</strong><span>engineered for pure local speed</span></div>
+        <div class="price-india"><span class="price-india-badge">Engine</span><span class="price-india-amount">Lock-Free Audio &amp; whisper.cpp</span></div>
         <div class="offer-mini-strip" aria-label="Mynah promise">
+          <span>Super-fast Rust core</span>
           <span>No subscription</span>
           <span>No word quota</span>
           <span>No cloud transcription</span>
@@ -466,10 +468,10 @@
           Download Mynah directly for your Mac. Runs 100% offline with whisper.cpp on Apple Silicon and Intel.
         </p>
         <div class="day-60-reasons" aria-label="Why Mynah is free">
-          <strong>Why Mynah?</strong>
-          <span>Private, on-device transcription that respects your privacy.</span>
-          <span>Hold Fn anywhere to dictate directly at your cursor.</span>
-          <span>Native Indic and multilingual speech recognition and translation.</span>
+          <strong>Engineered for pure speed</strong>
+          <span>High-performance native Rust core with zero web-bridge conversion lag.</span>
+          <span>Lock-free audio streaming directly into local whisper.cpp worker threads.</span>
+          <span>App Nap prevention ensures background dictation never throttles.</span>
         </div>
         <a class="button button-primary" href="/download/">Download Free for Mac</a>
       </div>
@@ -482,8 +484,8 @@
       </div>
       <div class="faq-grid">
         <details open><summary>Is Mynah really free?</summary><p>Yes, Mynah is 100% free software. No license keys, no trial expiration, no subscription, and no hidden fees. Just download and use.</p></details>
+        <details><summary>Why is Mynah so fast?</summary><p>Mynah is built with a high-performance native Rust core. Audio is streamed through lock-free ring buffers directly into whisper.cpp worker threads without web-bridge overhead, and macOS App Nap prevention guarantees background dictation never throttles.</p></details>
         <details><summary>Does Mynah use cloud transcription?</summary><p>No. The core dictation loop runs 100% locally on your Mac. Audio and transcription are processed on-device using engines like whisper.cpp. No cloud transcription or account is required.</p></details>
-        <details><summary>Does Mynah support languages other than English?</summary><p>Yes! Mynah supports multilingual dictation including Indic languages like Hindi, Kannada, Tamil, Telugu, and more. You can choose to transcribe directly in your spoken language or automatically translate into English at your cursor.</p></details>
         <details><summary>Is Mynah a subscription?</summary><p>No. Mynah is not a subscription and requires no accounts. All features and future updates are completely free.</p></details>
       </div>
       <div style="margin-top: 2.5rem; text-align: center;">

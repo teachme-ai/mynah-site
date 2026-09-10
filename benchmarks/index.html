@@ -12,13 +12,13 @@
 <body>
   <header class="site-header"><nav class="nav-shell"><a class="brand" href="/"><img src="/public/mynah_icon_highres.png" alt="Mynah Logo" class="brand-mark" /></a><a class="nav-cta" href="/">Home</a></nav></header>
   <main class="section">
-    <p class="eyebrow">Benchmarks</p>
-    <h1>Measured, not hand-waved.</h1>
-    <p class="hero-subtitle">Mynah will publish repeatable benchmark results only when tied to named hardware, app version, and test conditions.</p>
+    <p class="eyebrow">Architecture &amp; Benchmarks</p>
+    <h1>Engineered for instant response.</h1>
+    <p class="hero-subtitle">Mynah is built with a native Rust audio architecture and whisper.cpp for near-instant cursor dictation and zero cloud latency.</p>
     <div class="feature-grid">
-      <article><h3>Latency</h3><p>Fn release to final text visible at the active cursor.</p></article>
-      <article><h3>Resource use</h3><p>Idle memory, recording CPU, inference CPU, and energy impact.</p></article>
-      <article><h3>Reliability</h3><p>Hidden-window paste, short utterances, long utterances, and noise-tail behavior.</p></article>
+      <article><h3>Instant Fn Reflex</h3><p>Lock-free ring-buffer audio streaming passes audio frames directly to whisper.cpp workers with zero UI hang.</p></article>
+      <article><h3>Zero Web-Audio Overhead</h3><p>Audio is captured and processed natively in Rust memory buffers without JavaScript blob conversion or browser lag.</p></article>
+      <article><h3>macOS App Nap Protected</h3><p>Background execution prevents OS power-saving throttling, eliminating first-word latency spikes when you speak.</p></article>
     </div>
   </main>
   <script src="/main.js"></script>
