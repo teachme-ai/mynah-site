@@ -4,9 +4,9 @@
   "release": {
     "number": 179,
     "bundleVersion": "179",
-    "buildSignature": "1.0.0+r179.49165be1e515",
-    "builtAtIso": "2026-09-25T10:23:10.328Z",
-    "gitCommit": "49165be1e515"
+    "buildSignature": "1.0.0+r179.864d34bd20d9",
+    "builtAtIso": "2026-09-25T11:06:59.844Z",
+    "gitCommit": "864d34bd20d9"
   },
   "pricing": {
     "free": true,
@@ -22,8 +22,8 @@
       "label": "Apple Silicon (M1/M2/M3/M4)",
       "filename": "Mynah_1.0.0_b179_macos_aarch64.dmg",
       "url": "https://mynah.site/public/Mynah_1.0.0_b179_macos_aarch64.dmg",
-      "size_mb": 9,
-      "sha256": "411658487c7dcc6d690a7c3a98868fb3691c09595eb93f2f50180ae8d56da6ff",
+      "size_mb": 15,
+      "sha256": "c6942bb15eb542ab1b4d0c72b387592a2f4f6a9ee0a0b6cabe72c25009a4afe4",
       "min_os": "10.15",
       "notarized": true,
       "stapled": true,
@@ -37,8 +37,8 @@
       "label": "Intel (x86_64)",
       "filename": "Mynah_1.0.0_b179_macos_x86_64.dmg",
       "url": "https://mynah.site/public/Mynah_1.0.0_b179_macos_x86_64.dmg",
-      "size_mb": 10,
-      "sha256": "769a7672ccedb77fe69861759b51c62083aece277e9791019ba9b8e827810892",
+      "size_mb": 17,
+      "sha256": "4651586b25ee20c63df81370278c1e479ec5361366c9fa8f47b8e58ad3ca7615",
       "min_os": "10.15",
       "notarized": true,
       "stapled": true,
